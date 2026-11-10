@@ -1,0 +1,5921 @@
+{
+ "base": {
+  "test": {
+   "exact": 0.0,
+   "verdict": 0.0,
+   "well_formed": 0.0,
+   "faithful": 0.0,
+   "true_statement": 0.0,
+   "verdict_near_limit": 0.0,
+   "verdict_far_from_limit": 0.0,
+   "n": 400,
+   "samples": [
+    {
+     "prompt": "Q: Reading for pump P-98: vibration 13 mm/s (max 5 mm/s). Check it.\nA:",
+     "output": "conveyor CV-92 read 10 bar, limi",
+     "exact": false,
+     "verdict": false,
+     "well_formed": false,
+     "faithful": false,
+     "true_statement": false
+    },
+    {
+     "prompt": "Q: Pressure on fan F-93: 7 bar vs limit 10 bar.\nA:",
+     "output": "conveyor CV-90 read 10 bar, limi",
+     "exact": false,
+     "verdict": false,
+     "well_formed": false,
+     "faithful": false,
+     "true_statement": false
+    },
+    {
+     "prompt": "Q: Current on pump P-04: 51 A vs limit 27 A.\nA:",
+     "output": "conveyor CV-03 read 11 bar, limi",
+     "exact": false,
+     "verdict": false,
+     "well_formed": false,
+     "faithful": false,
+     "true_statement": false
+    },
+    {
+     "prompt": "Q: Motor M-03 temperature is 36 C, limit 85 C. Status?\nA:",
+     "output": "conveyor CV-39 read 10 bar, limi",
+     "exact": false,
+     "verdict": false,
+     "well_formed": false,
+     "faithful": false,
+     "true_statement": false
+    },
+    {
+     "prompt": "Q: Compressor C-56 temperature is 70 C, limit 79 C. Status?\nA:",
+     "output": "conveyor CV-11 read 10 bar, limi",
+     "exact": false,
+     "verdict": false,
+     "well_formed": false,
+     "faithful": false,
+     "true_statement": false
+    },
+    {
+     "prompt": "Q: Vibration on compressor C-45: 11 mm/s vs limit 10 mm/s.\nA:",
+     "output": "conveyor CV-31 read 11 bar, limi",
+     "exact": false,
+     "verdict": false,
+     "well_formed": false,
+     "faithful": false,
+     "true_statement": false
+    },
+    {
+     "prompt": "Q: Current on motor M-01: 37 A vs limit 36 A.\nA:",
+     "output": "conveyor CV-22 read 10 bar, limi",
+     "exact": false,
+     "verdict": false,
+     "well_formed": false,
+     "faithful": false,
+     "true_statement": false
+    },
+    {
+     "prompt": "Q: Fan F-28 temperature is 43 C, limit 48 C. Status?\nA:",
+     "output": "conveyor CV-19 read 10 bar, limi",
+     "exact": false,
+     "verdict": false,
+     "well_formed": false,
+     "faithful": false,
+     "true_statement": false
+    }
+   ]
+  },
+  "ood": {
+   "exact": 0.0,
+   "verdict": 0.0,
+   "well_formed": 0.0,
+   "faithful": 0.0,
+   "true_statement": 0.0,
+   "verdict_near_limit": 0.0,
+   "verdict_far_from_limit": 0.0,
+   "n": 300,
+   "samples": [
+    {
+     "prompt": "Q: Log: turbine T-29 shows vibration at 5 mm/s, max 6 mm/s. Verdict?\nA:",
+     "output": "fan F-11 read 11 bar, limit 11 b",
+     "exact": false,
+     "verdict": false,
+     "well_formed": false,
+     "faithful": false,
+     "true_statement": false
+    },
+    {
+     "prompt": "Q: Limit 60 C. Turbine T-66 temperature now 61 C. Status?\nA:",
+     "output": "con conveyor CV-91 read 10 bar,",
+     "exact": false,
+     "verdict": false,
+     "well_formed": false,
+     "faithful": false,
+     "true_statement": false
+    },
+    {
+     "prompt": "Q: Log: conveyor CV-73 shows vibration at 9 mm/s, max 6 mm/s. Verdict?\nA:",
+     "output": "fan F-91 read 11 bar, limit 12 b",
+     "exact": false,
+     "verdict": false,
+     "well_formed": false,
+     "faithful": false,
+     "true_statement": false
+    },
+    {
+     "prompt": "Q: Log: turbine T-80 shows pressure at 8 bar, max 5 bar. Verdict?\nA:",
+     "output": "fan F-11 read 11 bar, limit 11 b",
+     "exact": false,
+     "verdict": false,
+     "well_formed": false,
+     "faithful": false,
+     "true_statement": false
+    },
+    {
+     "prompt": "Q: Limit 6 bar. Conveyor CV-51 pressure now 3 bar. Status?\nA:",
+     "output": "conveyor CV-11 read 10 bar, limi",
+     "exact": false,
+     "verdict": false,
+     "well_formed": false,
+     "faithful": false,
+     "true_statement": false
+    },
+    {
+     "prompt": "Q: Limit 4 mm/s. Conveyor CV-68 vibration now 3 mm/s. Status?\nA:",
+     "output": "conveyor CV-91 read 10 bar, limi",
+     "exact": false,
+     "verdict": false,
+     "well_formed": false,
+     "faithful": false,
+     "true_statement": false
+    },
+    {
+     "prompt": "Q: Log: conveyor CV-62 shows temperature at 23 C, max 76 C. Verdict?\nA:",
+     "output": "fan F-11 read 11 bar, limit 11 b",
+     "exact": false,
+     "verdict": false,
+     "well_formed": false,
+     "faithful": false,
+     "true_statement": false
+    },
+    {
+     "prompt": "Q: Log: conveyor CV-24 shows temperature at 31 C, max 82 C. Verdict?\nA:",
+     "output": "fan F-11 read 11 bar, limit 11 b",
+     "exact": false,
+     "verdict": false,
+     "well_formed": false,
+     "faithful": false,
+     "true_statement": false
+    }
+   ]
+  },
+  "bpc": 0.39729725074516237
+ },
+ "sft": [
+  {
+   "test": {
+    "exact": 0.5925,
+    "verdict": 0.5925,
+    "well_formed": 1.0,
+    "faithful": 1.0,
+    "true_statement": 0.5925,
+    "verdict_near_limit": 0.15436241610738255,
+    "verdict_far_from_limit": 0.852589641434263,
+    "n": 400,
+    "samples": [
+     {
+      "prompt": "Q: Reading for pump P-98: vibration 13 mm/s (max 5 mm/s). Check it.\nA:",
+      "output": "ALARM P-98 13 mm/s > 5 mm/s",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Pressure on fan F-93: 7 bar vs limit 10 bar.\nA:",
+      "output": "OK F-93 7 bar <= 10 bar",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Current on pump P-04: 51 A vs limit 27 A.\nA:",
+      "output": "OK P-04 51 A <= 27 A",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Motor M-03 temperature is 36 C, limit 85 C. Status?\nA:",
+      "output": "OK M-03 36 C <= 85 C",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Compressor C-56 temperature is 70 C, limit 79 C. Status?\nA:",
+      "output": "OK C-56 70 C <= 79 C",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Vibration on compressor C-45: 11 mm/s vs limit 10 mm/s.\nA:",
+      "output": "OK C-45 11 mm/s <= 10 mm/s",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Current on motor M-01: 37 A vs limit 36 A.\nA:",
+      "output": "OK M-01 37 A <= 36 A",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Fan F-28 temperature is 43 C, limit 48 C. Status?\nA:",
+      "output": "OK F-28 43 C <= 48 C",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     }
+    ]
+   },
+   "ood": {
+    "exact": 0.0,
+    "verdict": 0.6133333333333333,
+    "well_formed": 0.9933333333333333,
+    "faithful": 0.0033333333333333335,
+    "true_statement": 0.6133333333333333,
+    "verdict_near_limit": 0.45918367346938777,
+    "verdict_far_from_limit": 0.6881188118811881,
+    "n": 300,
+    "samples": [
+     {
+      "prompt": "Q: Log: turbine T-29 shows vibration at 5 mm/s, max 6 mm/s. Verdict?\nA:",
+      "output": "OK M-29 5 mm/s <= 6 mm/s",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Limit 60 C. Turbine T-66 temperature now 61 C. Status?\nA:",
+      "output": "ALARM M-66 61 C > 88 C",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Log: conveyor CV-73 shows vibration at 9 mm/s, max 6 mm/s. Verdict?\nA:",
+      "output": "OK C-73 9 mm/s <= 6 mm/s",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Log: turbine T-80 shows pressure at 8 bar, max 5 bar. Verdict?\nA:",
+      "output": "OK M-80 8 bar <= 5 bar",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Limit 6 bar. Conveyor CV-51 pressure now 3 bar. Status?\nA:",
+      "output": "OK C-51 3 bar <= 11 bar",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Limit 4 mm/s. Conveyor CV-68 vibration now 3 mm/s. Status?\nA:",
+      "output": "OK C-68 3 mm/s <= 11 mm/s",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Log: conveyor CV-62 shows temperature at 23 C, max 76 C. Verdict?\nA:",
+      "output": "OK C-62 23 C <= 76 C",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Log: conveyor CV-24 shows temperature at 31 C, max 82 C. Verdict?\nA:",
+      "output": "OK C-24 31 C <= 82 C",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     }
+    ]
+   },
+   "bpc": 4.077701428685857,
+   "trainable_params": 820096,
+   "seconds": 112.75579261779785,
+   "log": [
+    {
+     "step": 0,
+     "loss": 8.72584056854248
+    },
+    {
+     "step": 50,
+     "loss": 0.5780652761459351
+    },
+    {
+     "step": 100,
+     "loss": 0.16352739930152893
+    },
+    {
+     "step": 150,
+     "loss": 0.06516123563051224
+    },
+    {
+     "step": 200,
+     "loss": 0.041910041123628616
+    },
+    {
+     "step": 250,
+     "loss": 0.03873362019658089
+    },
+    {
+     "step": 300,
+     "loss": 0.02775302156805992
+    },
+    {
+     "step": 350,
+     "loss": 0.029516279697418213
+    },
+    {
+     "step": 400,
+     "loss": 0.03495548665523529
+    },
+    {
+     "step": 450,
+     "loss": 0.026132406666874886
+    },
+    {
+     "step": 500,
+     "loss": 0.02895878441631794
+    },
+    {
+     "step": 550,
+     "loss": 0.026637056842446327
+    },
+    {
+     "step": 600,
+     "loss": 0.024416791275143623
+    },
+    {
+     "step": 650,
+     "loss": 0.02004149742424488
+    },
+    {
+     "step": 700,
+     "loss": 0.024680884554982185
+    },
+    {
+     "step": 750,
+     "loss": 0.02328435517847538
+    },
+    {
+     "step": 800,
+     "loss": 0.01205537747591734
+    },
+    {
+     "step": 850,
+     "loss": 0.02020113170146942
+    },
+    {
+     "step": 900,
+     "loss": 0.016518833115696907
+    },
+    {
+     "step": 950,
+     "loss": 0.01408584788441658
+    },
+    {
+     "step": 999,
+     "loss": 0.018021229654550552
+    }
+   ],
+   "method": "full fine-tuning",
+   "seed": 0,
+   "deadband": 3,
+   "n_train": 6000
+  },
+  {
+   "test": {
+    "exact": 0.5475,
+    "verdict": 0.5475,
+    "well_formed": 1.0,
+    "faithful": 1.0,
+    "true_statement": 0.5475,
+    "verdict_near_limit": 0.06040268456375839,
+    "verdict_far_from_limit": 0.8366533864541833,
+    "n": 400,
+    "samples": [
+     {
+      "prompt": "Q: Reading for pump P-98: vibration 13 mm/s (max 5 mm/s). Check it.\nA:",
+      "output": "ALARM P-98 13 mm/s > 5 mm/s",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Pressure on fan F-93: 7 bar vs limit 10 bar.\nA:",
+      "output": "OK F-93 7 bar <= 10 bar",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Current on pump P-04: 51 A vs limit 27 A.\nA:",
+      "output": "ALARM P-04 51 A > 27 A",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Motor M-03 temperature is 36 C, limit 85 C. Status?\nA:",
+      "output": "OK M-03 36 C <= 85 C",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Compressor C-56 temperature is 70 C, limit 79 C. Status?\nA:",
+      "output": "OK C-56 70 C <= 79 C",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Vibration on compressor C-45: 11 mm/s vs limit 10 mm/s.\nA:",
+      "output": "OK C-45 11 mm/s <= 10 mm/s",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Current on motor M-01: 37 A vs limit 36 A.\nA:",
+      "output": "OK M-01 37 A <= 36 A",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Fan F-28 temperature is 43 C, limit 48 C. Status?\nA:",
+      "output": "OK F-28 43 C <= 48 C",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     }
+    ]
+   },
+   "ood": {
+    "exact": 0.006666666666666667,
+    "verdict": 0.58,
+    "well_formed": 0.9,
+    "faithful": 0.01,
+    "true_statement": 0.61,
+    "verdict_near_limit": 0.4489795918367347,
+    "verdict_far_from_limit": 0.6435643564356436,
+    "n": 300,
+    "samples": [
+     {
+      "prompt": "Q: Log: turbine T-29 shows vibration at 5 mm/s, max 6 mm/s. Verdict?\nA:",
+      "output": "OK M-29 5 mm/s <= 6 mm/s",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Limit 60 C. Turbine T-66 temperature now 61 C. Status?\nA:",
+      "output": "ALARM 18 88 C",
+      "exact": false,
+      "verdict": false,
+      "well_formed": false,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Log: conveyor CV-73 shows vibration at 9 mm/s, max 6 mm/s. Verdict?\nA:",
+      "output": "OK C-73 9 mm/s <= 6 mm/s",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Log: turbine T-80 shows pressure at 8 bar, max 5 bar. Verdict?\nA:",
+      "output": "OK M-80 6 bar <= 5 bar",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Limit 6 bar. Conveyor CV-51 pressure now 3 bar. Status?\nA:",
+      "output": "OK C-51 3 bar <= 9 bar",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Limit 4 mm/s. Conveyor CV-68 vibration now 3 mm/s. Status?\nA:",
+      "output": "OK C-68 3 mm/s <= 9 mm/s",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Log: conveyor CV-62 shows temperature at 23 C, max 76 C. Verdict?\nA:",
+      "output": "ALARM C-62 23 C > 76 C",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Log: conveyor CV-24 shows temperature at 31 C, max 82 C. Verdict?\nA:",
+      "output": "ALARM C-24 31 C > 82 C",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": false
+     }
+    ]
+   },
+   "bpc": 3.8086215007295268,
+   "trainable_params": 820096,
+   "seconds": 113.97525930404663,
+   "log": [
+    {
+     "step": 0,
+     "loss": 8.276127815246582
+    },
+    {
+     "step": 50,
+     "loss": 0.4867677688598633
+    },
+    {
+     "step": 100,
+     "loss": 0.14952628314495087
+    },
+    {
+     "step": 150,
+     "loss": 0.060966912657022476
+    },
+    {
+     "step": 200,
+     "loss": 0.04276183247566223
+    },
+    {
+     "step": 250,
+     "loss": 0.03196325898170471
+    },
+    {
+     "step": 300,
+     "loss": 0.03277013078331947
+    },
+    {
+     "step": 350,
+     "loss": 0.032149311155080795
+    },
+    {
+     "step": 400,
+     "loss": 0.024869756773114204
+    },
+    {
+     "step": 450,
+     "loss": 0.03163281828165054
+    },
+    {
+     "step": 500,
+     "loss": 0.022211117669939995
+    },
+    {
+     "step": 550,
+     "loss": 0.019336484372615814
+    },
+    {
+     "step": 600,
+     "loss": 0.018288379535079002
+    },
+    {
+     "step": 650,
+     "loss": 0.02012406662106514
+    },
+    {
+     "step": 700,
+     "loss": 0.013595182448625565
+    },
+    {
+     "step": 750,
+     "loss": 0.017977681010961533
+    },
+    {
+     "step": 800,
+     "loss": 0.02749842032790184
+    },
+    {
+     "step": 850,
+     "loss": 0.0084520373493433
+    },
+    {
+     "step": 900,
+     "loss": 0.009403481148183346
+    },
+    {
+     "step": 950,
+     "loss": 0.013832099735736847
+    },
+    {
+     "step": 999,
+     "loss": 0.009521175175905228
+    }
+   ],
+   "method": "full fine-tuning",
+   "seed": 1,
+   "deadband": 3,
+   "n_train": 6000
+  },
+  {
+   "test": {
+    "exact": 0.61,
+    "verdict": 0.61,
+    "well_formed": 1.0,
+    "faithful": 1.0,
+    "true_statement": 0.61,
+    "verdict_near_limit": 0.0738255033557047,
+    "verdict_far_from_limit": 0.9282868525896414,
+    "n": 400,
+    "samples": [
+     {
+      "prompt": "Q: Reading for pump P-98: vibration 13 mm/s (max 5 mm/s). Check it.\nA:",
+      "output": "ALARM P-98 13 mm/s > 5 mm/s",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Pressure on fan F-93: 7 bar vs limit 10 bar.\nA:",
+      "output": "OK F-93 7 bar <= 10 bar",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Current on pump P-04: 51 A vs limit 27 A.\nA:",
+      "output": "ALARM P-04 51 A > 27 A",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Motor M-03 temperature is 36 C, limit 85 C. Status?\nA:",
+      "output": "OK M-03 36 C <= 85 C",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Compressor C-56 temperature is 70 C, limit 79 C. Status?\nA:",
+      "output": "OK C-56 70 C <= 79 C",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Vibration on compressor C-45: 11 mm/s vs limit 10 mm/s.\nA:",
+      "output": "OK C-45 11 mm/s <= 10 mm/s",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Current on motor M-01: 37 A vs limit 36 A.\nA:",
+      "output": "OK M-01 37 A <= 36 A",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Fan F-28 temperature is 43 C, limit 48 C. Status?\nA:",
+      "output": "OK F-28 43 C <= 48 C",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     }
+    ]
+   },
+   "ood": {
+    "exact": 0.0,
+    "verdict": 0.5033333333333333,
+    "well_formed": 0.87,
+    "faithful": 0.0,
+    "true_statement": 0.5066666666666667,
+    "verdict_near_limit": 0.11224489795918367,
+    "verdict_far_from_limit": 0.693069306930693,
+    "n": 300,
+    "samples": [
+     {
+      "prompt": "Q: Log: turbine T-29 shows vibration at 5 mm/s, max 6 mm/s. Verdict?\nA:",
+      "output": "OK M-29 59 mm/s <= 6 mm/s",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Limit 60 C. Turbine T-66 temperature now 61 C. Status?\nA:",
+      "output": "OK T-66 61 C <= 81 C",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Log: conveyor CV-73 shows vibration at 9 mm/s, max 6 mm/s. Verdict?\nA:",
+      "output": "OK C-73 9 mm/s <= 6 mm/s",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Log: turbine T-80 shows pressure at 8 bar, max 5 bar. Verdict?\nA:",
+      "output": "OK M-80 8 bar <= 5 bar",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Limit 6 bar. Conveyor CV-51 pressure now 3 bar. Status?\nA:",
+      "output": "OK C-51 3 bar <= <= 11 bar",
+      "exact": false,
+      "verdict": false,
+      "well_formed": false,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Limit 4 mm/s. Conveyor CV-68 vibration now 3 mm/s. Status?\nA:",
+      "output": "OK C-68 3 mm/s <= 8 mm/s",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Log: conveyor CV-62 shows temperature at 23 C, max 76 C. Verdict?\nA:",
+      "output": "OK C-62 23 C <= 76 C",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Log: conveyor CV-24 shows temperature at 31 C, max 82 C. Verdict?\nA:",
+      "output": "OK C-24 31 C <= 82 C",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     }
+    ]
+   },
+   "bpc": 3.6800847631623794,
+   "trainable_params": 820096,
+   "seconds": 116.96328687667847,
+   "log": [
+    {
+     "step": 0,
+     "loss": 8.557676315307617
+    },
+    {
+     "step": 50,
+     "loss": 0.51378333568573
+    },
+    {
+     "step": 100,
+     "loss": 0.17764446139335632
+    },
+    {
+     "step": 150,
+     "loss": 0.06720562279224396
+    },
+    {
+     "step": 200,
+     "loss": 0.04416980594396591
+    },
+    {
+     "step": 250,
+     "loss": 0.040179960429668427
+    },
+    {
+     "step": 300,
+     "loss": 0.031741976737976074
+    },
+    {
+     "step": 350,
+     "loss": 0.027411069720983505
+    },
+    {
+     "step": 400,
+     "loss": 0.026999296620488167
+    },
+    {
+     "step": 450,
+     "loss": 0.028376586735248566
+    },
+    {
+     "step": 500,
+     "loss": 0.028977008536458015
+    },
+    {
+     "step": 550,
+     "loss": 0.021878167986869812
+    },
+    {
+     "step": 600,
+     "loss": 0.026021808385849
+    },
+    {
+     "step": 650,
+     "loss": 0.029438193887472153
+    },
+    {
+     "step": 700,
+     "loss": 0.01504167728126049
+    },
+    {
+     "step": 750,
+     "loss": 0.009450791403651237
+    },
+    {
+     "step": 800,
+     "loss": 0.016567813232541084
+    },
+    {
+     "step": 850,
+     "loss": 0.014709440059959888
+    },
+    {
+     "step": 900,
+     "loss": 0.009006655775010586
+    },
+    {
+     "step": 950,
+     "loss": 0.006643285974860191
+    },
+    {
+     "step": 999,
+     "loss": 0.00661019841209054
+    }
+   ],
+   "method": "full fine-tuning",
+   "seed": 2,
+   "deadband": 3,
+   "n_train": 6000
+  },
+  {
+   "test": {
+    "exact": 0.635,
+    "verdict": 0.635,
+    "well_formed": 1.0,
+    "faithful": 1.0,
+    "true_statement": 0.635,
+    "verdict_near_limit": 0.2348993288590604,
+    "verdict_far_from_limit": 0.8725099601593626,
+    "n": 400,
+    "samples": [
+     {
+      "prompt": "Q: Reading for pump P-98: vibration 13 mm/s (max 5 mm/s). Check it.\nA:",
+      "output": "ALARM P-98 13 mm/s > 5 mm/s",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Pressure on fan F-93: 7 bar vs limit 10 bar.\nA:",
+      "output": "OK F-93 7 bar <= 10 bar",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Current on pump P-04: 51 A vs limit 27 A.\nA:",
+      "output": "ALARM P-04 51 A > 27 A",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Motor M-03 temperature is 36 C, limit 85 C. Status?\nA:",
+      "output": "OK M-03 36 C <= 85 C",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Compressor C-56 temperature is 70 C, limit 79 C. Status?\nA:",
+      "output": "OK C-56 70 C <= 79 C",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Vibration on compressor C-45: 11 mm/s vs limit 10 mm/s.\nA:",
+      "output": "ALARM C-45 11 mm/s > 10 mm/s",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Current on motor M-01: 37 A vs limit 36 A.\nA:",
+      "output": "OK M-01 37 A <= 36 A",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Fan F-28 temperature is 43 C, limit 48 C. Status?\nA:",
+      "output": "OK F-28 43 C <= 48 C",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     }
+    ]
+   },
+   "ood": {
+    "exact": 0.09666666666666666,
+    "verdict": 0.4766666666666667,
+    "well_formed": 0.86,
+    "faithful": 0.14333333333333334,
+    "true_statement": 0.5533333333333333,
+    "verdict_near_limit": 0.24489795918367346,
+    "verdict_far_from_limit": 0.5891089108910891,
+    "n": 300,
+    "samples": [
+     {
+      "prompt": "Q: Log: turbine T-29 shows vibration at 5 mm/s, max 6 mm/s. Verdict?\nA:",
+      "output": "OK T-29 5 mm/s <= 6 mm/s",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Limit 60 C. Turbine T-66 temperature now 61 C. Status?\nA:",
+      "output": "OK 11 tem6 C",
+      "exact": false,
+      "verdict": false,
+      "well_formed": false,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Log: conveyor CV-73 shows vibration at 9 mm/s, max 6 mm/s. Verdict?\nA:",
+      "output": "OK G-73 9 mm/s <= 6 mm/s",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Log: turbine T-80 shows pressure at 8 bar, max 5 bar. Verdict?\nA:",
+      "output": "OK T-80 8 6 bar <= 6 bar",
+      "exact": false,
+      "verdict": false,
+      "well_formed": false,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Limit 6 bar. Conveyor CV-51 pressure now 3 bar. Status?\nA:",
+      "output": "OK C-51 3 bar <= 6 bar",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Limit 4 mm/s. Conveyor CV-68 vibration now 3 mm/s. Status?\nA:",
+      "output": "OK C-68 3 mm/s <= 3 mm/s",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Log: conveyor CV-62 shows temperature at 23 C, max 76 C. Verdict?\nA:",
+      "output": "OK G-62 23 C <= 76 C",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Log: conveyor CV-24 shows temperature at 31 C, max 82 C. Verdict?\nA:",
+      "output": "OK G-24 31 C <= 72 C",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     }
+    ]
+   },
+   "bpc": 3.090777954813724,
+   "trainable_params": 131072,
+   "seconds": 121.06833291053772,
+   "log": [
+    {
+     "step": 0,
+     "loss": 8.72584056854248
+    },
+    {
+     "step": 50,
+     "loss": 1.0515687465667725
+    },
+    {
+     "step": 100,
+     "loss": 0.5933096408843994
+    },
+    {
+     "step": 150,
+     "loss": 0.4488218128681183
+    },
+    {
+     "step": 200,
+     "loss": 0.39397692680358887
+    },
+    {
+     "step": 250,
+     "loss": 0.4039269983768463
+    },
+    {
+     "step": 300,
+     "loss": 0.3558747470378876
+    },
+    {
+     "step": 350,
+     "loss": 0.3460689187049866
+    },
+    {
+     "step": 400,
+     "loss": 0.3337770700454712
+    },
+    {
+     "step": 450,
+     "loss": 0.3415117859840393
+    },
+    {
+     "step": 500,
+     "loss": 0.33153361082077026
+    },
+    {
+     "step": 550,
+     "loss": 0.3224426507949829
+    },
+    {
+     "step": 600,
+     "loss": 0.32403284311294556
+    },
+    {
+     "step": 650,
+     "loss": 0.31817373633384705
+    },
+    {
+     "step": 700,
+     "loss": 0.3129751980304718
+    },
+    {
+     "step": 750,
+     "loss": 0.3137511610984802
+    },
+    {
+     "step": 800,
+     "loss": 0.30910247564315796
+    },
+    {
+     "step": 850,
+     "loss": 0.31144392490386963
+    },
+    {
+     "step": 900,
+     "loss": 0.31412413716316223
+    },
+    {
+     "step": 950,
+     "loss": 0.3134259879589081
+    },
+    {
+     "step": 999,
+     "loss": 0.3199739158153534
+    }
+   ],
+   "method": "LoRA r=16",
+   "seed": 0,
+   "deadband": 3,
+   "n_train": 6000
+  },
+  {
+   "test": {
+    "exact": 0.5775,
+    "verdict": 0.5775,
+    "well_formed": 1.0,
+    "faithful": 1.0,
+    "true_statement": 0.5775,
+    "verdict_near_limit": 0.10067114093959731,
+    "verdict_far_from_limit": 0.8605577689243028,
+    "n": 400,
+    "samples": [
+     {
+      "prompt": "Q: Reading for pump P-98: vibration 13 mm/s (max 5 mm/s). Check it.\nA:",
+      "output": "ALARM P-98 13 mm/s > 5 mm/s",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Pressure on fan F-93: 7 bar vs limit 10 bar.\nA:",
+      "output": "OK F-93 7 bar <= 10 bar",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Current on pump P-04: 51 A vs limit 27 A.\nA:",
+      "output": "ALARM P-04 51 A > 27 A",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Motor M-03 temperature is 36 C, limit 85 C. Status?\nA:",
+      "output": "OK M-03 36 C <= 85 C",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Compressor C-56 temperature is 70 C, limit 79 C. Status?\nA:",
+      "output": "OK C-56 70 C <= 79 C",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Vibration on compressor C-45: 11 mm/s vs limit 10 mm/s.\nA:",
+      "output": "OK C-45 11 mm/s <= 10 mm/s",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Current on motor M-01: 37 A vs limit 36 A.\nA:",
+      "output": "OK M-01 37 A <= 36 A",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Fan F-28 temperature is 43 C, limit 48 C. Status?\nA:",
+      "output": "OK F-28 43 C <= 48 C",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     }
+    ]
+   },
+   "ood": {
+    "exact": 0.0,
+    "verdict": 0.6633333333333333,
+    "well_formed": 1.0,
+    "faithful": 0.0,
+    "true_statement": 0.6,
+    "verdict_near_limit": 0.336734693877551,
+    "verdict_far_from_limit": 0.8217821782178217,
+    "n": 300,
+    "samples": [
+     {
+      "prompt": "Q: Log: turbine T-29 shows vibration at 5 mm/s, max 6 mm/s. Verdict?\nA:",
+      "output": "OK M-29 5 mm/s <= 6 mm/s",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Limit 60 C. Turbine T-66 temperature now 61 C. Status?\nA:",
+      "output": "OK M-66 61 C <= 51 C",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Log: conveyor CV-73 shows vibration at 9 mm/s, max 6 mm/s. Verdict?\nA:",
+      "output": "OK C-73 9 mm/s <= 6 mm/s",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Log: turbine T-80 shows pressure at 8 bar, max 5 bar. Verdict?\nA:",
+      "output": "OK M-80 8 bar <= 5 bar",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Limit 6 bar. Conveyor CV-51 pressure now 3 bar. Status?\nA:",
+      "output": "OK C-51 3 mm/s <= 6 mm/s",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Limit 4 mm/s. Conveyor CV-68 vibration now 3 mm/s. Status?\nA:",
+      "output": "OK C-68 3 mm/s <= 4 mm/s",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Log: conveyor CV-62 shows temperature at 23 C, max 76 C. Verdict?\nA:",
+      "output": "OK C-62 23 C <= 76 C",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Log: conveyor CV-24 shows temperature at 31 C, max 82 C. Verdict?\nA:",
+      "output": "OK C-24 31 C <= 82 C",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     }
+    ]
+   },
+   "bpc": 2.8477726605200067,
+   "trainable_params": 131072,
+   "seconds": 119.24574637413025,
+   "log": [
+    {
+     "step": 0,
+     "loss": 8.276127815246582
+    },
+    {
+     "step": 50,
+     "loss": 1.0189950466156006
+    },
+    {
+     "step": 100,
+     "loss": 0.5662632584571838
+    },
+    {
+     "step": 150,
+     "loss": 0.4169348478317261
+    },
+    {
+     "step": 200,
+     "loss": 0.4356401562690735
+    },
+    {
+     "step": 250,
+     "loss": 0.36804521083831787
+    },
+    {
+     "step": 300,
+     "loss": 0.3706955313682556
+    },
+    {
+     "step": 350,
+     "loss": 0.34838560223579407
+    },
+    {
+     "step": 400,
+     "loss": 0.3301968276500702
+    },
+    {
+     "step": 450,
+     "loss": 0.33749818801879883
+    },
+    {
+     "step": 500,
+     "loss": 0.3185548782348633
+    },
+    {
+     "step": 550,
+     "loss": 0.3320237994194031
+    },
+    {
+     "step": 600,
+     "loss": 0.3049631714820862
+    },
+    {
+     "step": 650,
+     "loss": 0.3199593424797058
+    },
+    {
+     "step": 700,
+     "loss": 0.30549025535583496
+    },
+    {
+     "step": 750,
+     "loss": 0.32053422927856445
+    },
+    {
+     "step": 800,
+     "loss": 0.3345835506916046
+    },
+    {
+     "step": 850,
+     "loss": 0.3001706004142761
+    },
+    {
+     "step": 900,
+     "loss": 0.29599812626838684
+    },
+    {
+     "step": 950,
+     "loss": 0.3142912983894348
+    },
+    {
+     "step": 999,
+     "loss": 0.30953729152679443
+    }
+   ],
+   "method": "LoRA r=16",
+   "seed": 1,
+   "deadband": 3,
+   "n_train": 6000
+  },
+  {
+   "test": {
+    "exact": 0.575,
+    "verdict": 0.575,
+    "well_formed": 1.0,
+    "faithful": 1.0,
+    "true_statement": 0.575,
+    "verdict_near_limit": 0.040268456375838924,
+    "verdict_far_from_limit": 0.8924302788844621,
+    "n": 400,
+    "samples": [
+     {
+      "prompt": "Q: Reading for pump P-98: vibration 13 mm/s (max 5 mm/s). Check it.\nA:",
+      "output": "ALARM P-98 13 mm/s > 5 mm/s",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Pressure on fan F-93: 7 bar vs limit 10 bar.\nA:",
+      "output": "OK F-93 7 bar <= 10 bar",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Current on pump P-04: 51 A vs limit 27 A.\nA:",
+      "output": "ALARM P-04 51 A > 27 A",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Motor M-03 temperature is 36 C, limit 85 C. Status?\nA:",
+      "output": "OK M-03 36 C <= 85 C",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Compressor C-56 temperature is 70 C, limit 79 C. Status?\nA:",
+      "output": "OK C-56 70 C <= 79 C",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Vibration on compressor C-45: 11 mm/s vs limit 10 mm/s.\nA:",
+      "output": "OK C-45 11 mm/s <= 10 mm/s",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Current on motor M-01: 37 A vs limit 36 A.\nA:",
+      "output": "OK M-01 37 A <= 36 A",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Fan F-28 temperature is 43 C, limit 48 C. Status?\nA:",
+      "output": "OK F-28 43 C <= 48 C",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     }
+    ]
+   },
+   "ood": {
+    "exact": 0.01,
+    "verdict": 0.5533333333333333,
+    "well_formed": 0.9266666666666666,
+    "faithful": 0.016666666666666666,
+    "true_statement": 0.5633333333333334,
+    "verdict_near_limit": 0.1836734693877551,
+    "verdict_far_from_limit": 0.7326732673267327,
+    "n": 300,
+    "samples": [
+     {
+      "prompt": "Q: Log: turbine T-29 shows vibration at 5 mm/s, max 6 mm/s. Verdict?\nA:",
+      "output": "OK M-29 5 mm/s <= 6 mm/s",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Limit 60 C. Turbine T-66 temperature now 61 C. Status?\nA:",
+      "output": "OK T-66 61 C <= 11 C",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Log: conveyor CV-73 shows vibration at 9 mm/s, max 6 mm/s. Verdict?\nA:",
+      "output": "OK G-73 9 mm/s <= 6 mm/s",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Log: turbine T-80 shows pressure at 8 bar, max 5 bar. Verdict?\nA:",
+      "output": "OK M-80 8 bar <= 5 bar",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Limit 6 bar. Conveyor CV-51 pressure now 3 bar. Status?\nA:",
+      "output": "OK C-51 3 bar <= 6 bar",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Limit 4 mm/s. Conveyor CV-68 vibration now 3 mm/s. Status?\nA:",
+      "output": "OK C-68 3 mm/s <= 4 mm/s",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Log: conveyor CV-62 shows temperature at 23 C, max 76 C. Verdict?\nA:",
+      "output": "OK G-62 23 C <= 76 C",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Log: conveyor CV-24 shows temperature at 31 C, max 82 C. Verdict?\nA:",
+      "output": "OK G-24 31 C <= 82 C",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     }
+    ]
+   },
+   "bpc": 2.733525445465097,
+   "trainable_params": 131072,
+   "seconds": 121.28819608688354,
+   "log": [
+    {
+     "step": 0,
+     "loss": 8.557676315307617
+    },
+    {
+     "step": 50,
+     "loss": 1.0253400802612305
+    },
+    {
+     "step": 100,
+     "loss": 0.5667137503623962
+    },
+    {
+     "step": 150,
+     "loss": 0.43977662920951843
+    },
+    {
+     "step": 200,
+     "loss": 0.4178282618522644
+    },
+    {
+     "step": 250,
+     "loss": 0.3978615701198578
+    },
+    {
+     "step": 300,
+     "loss": 0.38098597526550293
+    },
+    {
+     "step": 350,
+     "loss": 0.34515106678009033
+    },
+    {
+     "step": 400,
+     "loss": 0.3190363347530365
+    },
+    {
+     "step": 450,
+     "loss": 0.3392769396305084
+    },
+    {
+     "step": 500,
+     "loss": 0.31830188632011414
+    },
+    {
+     "step": 550,
+     "loss": 0.3101091980934143
+    },
+    {
+     "step": 600,
+     "loss": 0.32341745495796204
+    },
+    {
+     "step": 650,
+     "loss": 0.31888726353645325
+    },
+    {
+     "step": 700,
+     "loss": 0.31759411096572876
+    },
+    {
+     "step": 750,
+     "loss": 0.3069152534008026
+    },
+    {
+     "step": 800,
+     "loss": 0.3032512664794922
+    },
+    {
+     "step": 850,
+     "loss": 0.30219945311546326
+    },
+    {
+     "step": 900,
+     "loss": 0.3135547637939453
+    },
+    {
+     "step": 950,
+     "loss": 0.29172879457473755
+    },
+    {
+     "step": 999,
+     "loss": 0.3118182420730591
+    }
+   ],
+   "method": "LoRA r=16",
+   "seed": 2,
+   "deadband": 3,
+   "n_train": 6000
+  },
+  {
+   "test": {
+    "exact": 0.36,
+    "verdict": 0.365,
+    "well_formed": 1.0,
+    "faithful": 0.9875,
+    "true_statement": 0.3675,
+    "verdict_near_limit": 0.0,
+    "verdict_far_from_limit": 0.5816733067729084,
+    "n": 400,
+    "samples": [
+     {
+      "prompt": "Q: Reading for pump P-98: vibration 13 mm/s (max 5 mm/s). Check it.\nA:",
+      "output": "OK P-98 13 mm/s <= 5 mm/s",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Pressure on fan F-93: 7 bar vs limit 10 bar.\nA:",
+      "output": "OK F-93 7 bar <= 10 bar",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Current on pump P-04: 51 A vs limit 27 A.\nA:",
+      "output": "OK P-04 51 A <= 27 A",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Motor M-03 temperature is 36 C, limit 85 C. Status?\nA:",
+      "output": "OK M-03 36 C <= 85 C",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Compressor C-56 temperature is 70 C, limit 79 C. Status?\nA:",
+      "output": "OK C-56 70 C <= 79 C",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Vibration on compressor C-45: 11 mm/s vs limit 10 mm/s.\nA:",
+      "output": "OK C-45 11 mm/s <= 10 mm/s",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Current on motor M-01: 37 A vs limit 36 A.\nA:",
+      "output": "OK M-01 38 A <= 36 A",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Fan F-28 temperature is 43 C, limit 48 C. Status?\nA:",
+      "output": "OK F-28 43 C <= 48 C",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     }
+    ]
+   },
+   "ood": {
+    "exact": 0.0033333333333333335,
+    "verdict": 0.36,
+    "well_formed": 0.9533333333333334,
+    "faithful": 0.023333333333333334,
+    "true_statement": 0.4666666666666667,
+    "verdict_near_limit": 0.0,
+    "verdict_far_from_limit": 0.5346534653465347,
+    "n": 300,
+    "samples": [
+     {
+      "prompt": "Q: Log: turbine T-29 shows vibration at 5 mm/s, max 6 mm/s. Verdict?\nA:",
+      "output": "OK M-29 5 mm/s <= 6 mm/s",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Limit 60 C. Turbine T-66 temperature now 61 C. Status?\nA:",
+      "output": "OK T-66 61 C <= 60 C",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Log: conveyor CV-73 shows vibration at 9 mm/s, max 6 mm/s. Verdict?\nA:",
+      "output": "OK C-73 8 mm/s <= 6 mm/s",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Log: turbine T-80 shows pressure at 8 bar, max 5 bar. Verdict?\nA:",
+      "output": "OK C-90 5 bar <= 5 bar",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Limit 6 bar. Conveyor CV-51 pressure now 3 bar. Status?\nA:",
+      "output": "OK C-51 3 bar <= 6 bar",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Limit 4 mm/s. Conveyor CV-68 vibration now 3 mm/s. Status?\nA:",
+      "output": "OK C-68 3 mm/s <= 4 mm/s",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Log: conveyor CV-62 shows temperature at 23 C, max 76 C. Verdict?\nA:",
+      "output": "OK C-62 23 C <= 65 C",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Log: conveyor CV-24 shows temperature at 31 C, max 82 C. Verdict?\nA:",
+      "output": "OK C-24 41 C <= 72 C",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     }
+    ]
+   },
+   "bpc": 2.077827658455919,
+   "trainable_params": 32768,
+   "seconds": 120.48425054550171,
+   "log": [
+    {
+     "step": 0,
+     "loss": 8.72584056854248
+    },
+    {
+     "step": 50,
+     "loss": 1.42362380027771
+    },
+    {
+     "step": 100,
+     "loss": 0.8730510473251343
+    },
+    {
+     "step": 150,
+     "loss": 0.5950472950935364
+    },
+    {
+     "step": 200,
+     "loss": 0.47847980260849
+    },
+    {
+     "step": 250,
+     "loss": 0.5060634016990662
+    },
+    {
+     "step": 300,
+     "loss": 0.42944198846817017
+    },
+    {
+     "step": 350,
+     "loss": 0.41824766993522644
+    },
+    {
+     "step": 400,
+     "loss": 0.4171341359615326
+    },
+    {
+     "step": 450,
+     "loss": 0.4068121910095215
+    },
+    {
+     "step": 500,
+     "loss": 0.40062665939331055
+    },
+    {
+     "step": 550,
+     "loss": 0.3815086781978607
+    },
+    {
+     "step": 600,
+     "loss": 0.3773171305656433
+    },
+    {
+     "step": 650,
+     "loss": 0.365172803401947
+    },
+    {
+     "step": 700,
+     "loss": 0.35043972730636597
+    },
+    {
+     "step": 750,
+     "loss": 0.34568291902542114
+    },
+    {
+     "step": 800,
+     "loss": 0.34582453966140747
+    },
+    {
+     "step": 850,
+     "loss": 0.3560645580291748
+    },
+    {
+     "step": 900,
+     "loss": 0.3424655795097351
+    },
+    {
+     "step": 950,
+     "loss": 0.3540065586566925
+    },
+    {
+     "step": 999,
+     "loss": 0.35318872332572937
+    }
+   ],
+   "method": "LoRA r=4",
+   "seed": 0,
+   "deadband": 3,
+   "n_train": 6000
+  },
+  {
+   "test": {
+    "exact": 0.36,
+    "verdict": 0.3675,
+    "well_formed": 1.0,
+    "faithful": 0.9875,
+    "true_statement": 0.3675,
+    "verdict_near_limit": 0.0,
+    "verdict_far_from_limit": 0.5856573705179283,
+    "n": 400,
+    "samples": [
+     {
+      "prompt": "Q: Reading for pump P-98: vibration 13 mm/s (max 5 mm/s). Check it.\nA:",
+      "output": "OK P-98 13 mm/s <= 5 mm/s",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Pressure on fan F-93: 7 bar vs limit 10 bar.\nA:",
+      "output": "OK F-93 7 bar <= 10 bar",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Current on pump P-04: 51 A vs limit 27 A.\nA:",
+      "output": "OK P-04 51 A <= 27 A",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Motor M-03 temperature is 36 C, limit 85 C. Status?\nA:",
+      "output": "OK M-03 36 C <= 85 C",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Compressor C-56 temperature is 70 C, limit 79 C. Status?\nA:",
+      "output": "OK C-56 70 C <= 79 C",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Vibration on compressor C-45: 11 mm/s vs limit 10 mm/s.\nA:",
+      "output": "OK C-45 11 mm/s <= 10 mm/s",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Current on motor M-01: 37 A vs limit 36 A.\nA:",
+      "output": "OK M-01 37 A <= 36 A",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Fan F-28 temperature is 43 C, limit 48 C. Status?\nA:",
+      "output": "OK F-28 43 C <= 48 C",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     }
+    ]
+   },
+   "ood": {
+    "exact": 0.006666666666666667,
+    "verdict": 0.38,
+    "well_formed": 1.0,
+    "faithful": 0.02,
+    "true_statement": 0.38333333333333336,
+    "verdict_near_limit": 0.0,
+    "verdict_far_from_limit": 0.5643564356435643,
+    "n": 300,
+    "samples": [
+     {
+      "prompt": "Q: Log: turbine T-29 shows vibration at 5 mm/s, max 6 mm/s. Verdict?\nA:",
+      "output": "OK M-29 5 mm/s <= 6 mm/s",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Limit 60 C. Turbine T-66 temperature now 61 C. Status?\nA:",
+      "output": "OK T-66 60 C <= 21 C",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Log: conveyor CV-73 shows vibration at 9 mm/s, max 6 mm/s. Verdict?\nA:",
+      "output": "OK C-73 9 mm/s <= 6 mm/s",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Log: turbine T-80 shows pressure at 8 bar, max 5 bar. Verdict?\nA:",
+      "output": "OK M-90 7 bar <= 6 bar",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Limit 6 bar. Conveyor CV-51 pressure now 3 bar. Status?\nA:",
+      "output": "OK C-51 6 bar <= 2 bar",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Limit 4 mm/s. Conveyor CV-68 vibration now 3 mm/s. Status?\nA:",
+      "output": "OK C-67 4 mm/s <= 1 mm/s",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Log: conveyor CV-62 shows temperature at 23 C, max 76 C. Verdict?\nA:",
+      "output": "OK G-62 23 C <= 76 C",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Log: conveyor CV-24 shows temperature at 31 C, max 82 C. Verdict?\nA:",
+      "output": "OK G-24 31 C <= 62 C",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     }
+    ]
+   },
+   "bpc": 2.0744798441742236,
+   "trainable_params": 32768,
+   "seconds": 119.18231916427612,
+   "log": [
+    {
+     "step": 0,
+     "loss": 8.276127815246582
+    },
+    {
+     "step": 50,
+     "loss": 1.3134350776672363
+    },
+    {
+     "step": 100,
+     "loss": 0.8178532123565674
+    },
+    {
+     "step": 150,
+     "loss": 0.6059790253639221
+    },
+    {
+     "step": 200,
+     "loss": 0.5304470062255859
+    },
+    {
+     "step": 250,
+     "loss": 0.4467758536338806
+    },
+    {
+     "step": 300,
+     "loss": 0.4572671353816986
+    },
+    {
+     "step": 350,
+     "loss": 0.43612319231033325
+    },
+    {
+     "step": 400,
+     "loss": 0.41329753398895264
+    },
+    {
+     "step": 450,
+     "loss": 0.43058478832244873
+    },
+    {
+     "step": 500,
+     "loss": 0.38962194323539734
+    },
+    {
+     "step": 550,
+     "loss": 0.3897683620452881
+    },
+    {
+     "step": 600,
+     "loss": 0.35830479860305786
+    },
+    {
+     "step": 650,
+     "loss": 0.3666708767414093
+    },
+    {
+     "step": 700,
+     "loss": 0.34918856620788574
+    },
+    {
+     "step": 750,
+     "loss": 0.3658066391944885
+    },
+    {
+     "step": 800,
+     "loss": 0.3817584216594696
+    },
+    {
+     "step": 850,
+     "loss": 0.3434855043888092
+    },
+    {
+     "step": 900,
+     "loss": 0.33973169326782227
+    },
+    {
+     "step": 950,
+     "loss": 0.36214348673820496
+    },
+    {
+     "step": 999,
+     "loss": 0.3480990529060364
+    }
+   ],
+   "method": "LoRA r=4",
+   "seed": 1,
+   "deadband": 3,
+   "n_train": 6000
+  },
+  {
+   "test": {
+    "exact": 0.36,
+    "verdict": 0.365,
+    "well_formed": 1.0,
+    "faithful": 0.9775,
+    "true_statement": 0.37,
+    "verdict_near_limit": 0.0,
+    "verdict_far_from_limit": 0.5816733067729084,
+    "n": 400,
+    "samples": [
+     {
+      "prompt": "Q: Reading for pump P-98: vibration 13 mm/s (max 5 mm/s). Check it.\nA:",
+      "output": "OK P-98 13 mm/s <= 5 mm/s",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Pressure on fan F-93: 7 bar vs limit 10 bar.\nA:",
+      "output": "OK F-93 7 bar <= 10 bar",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Current on pump P-04: 51 A vs limit 27 A.\nA:",
+      "output": "OK P-04 51 A <= 27 A",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Motor M-03 temperature is 36 C, limit 85 C. Status?\nA:",
+      "output": "OK M-03 36 C <= 85 C",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Compressor C-56 temperature is 70 C, limit 79 C. Status?\nA:",
+      "output": "OK C-56 70 C <= 79 C",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Vibration on compressor C-45: 11 mm/s vs limit 10 mm/s.\nA:",
+      "output": "OK C-45 11 mm/s <= 10 mm/s",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Current on motor M-01: 37 A vs limit 36 A.\nA:",
+      "output": "OK M-01 38 A <= 36 A",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Fan F-28 temperature is 43 C, limit 48 C. Status?\nA:",
+      "output": "OK F-28 43 C <= 48 C",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     }
+    ]
+   },
+   "ood": {
+    "exact": 0.0,
+    "verdict": 0.22,
+    "well_formed": 0.57,
+    "faithful": 0.0,
+    "true_statement": 0.30666666666666664,
+    "verdict_near_limit": 0.0,
+    "verdict_far_from_limit": 0.32673267326732675,
+    "n": 300,
+    "samples": [
+     {
+      "prompt": "Q: Log: turbine T-29 shows vibration at 5 mm/s, max 6 mm/s. Verdict?\nA:",
+      "output": "OK C-29 5 mm/s <= 6 mm/s",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Limit 60 C. Turbine T-66 temperature now 61 C. Status?\nA:",
+      "output": "OK T-66 7 C <= nigreater < n< 19",
+      "exact": false,
+      "verdict": false,
+      "well_formed": false,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Log: conveyor CV-73 shows vibration at 9 mm/s, max 6 mm/s. Verdict?\nA:",
+      "output": "OK C-83 9 mm/s <= 6 mm/s",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Log: turbine T-80 shows pressure at 8 bar, max 5 bar. Verdict?\nA:",
+      "output": "OK C-90 8 bar <= 5 bar",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Limit 6 bar. Conveyor CV-51 pressure now 3 bar. Status?\nA:",
+      "output": "OK C-51 2 bar <=  bar",
+      "exact": false,
+      "verdict": false,
+      "well_formed": false,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Limit 4 mm/s. Conveyor CV-68 vibration now 3 mm/s. Status?\nA:",
+      "output": "OK C-68 3 mm/s <=  2 mm/s",
+      "exact": false,
+      "verdict": false,
+      "well_formed": false,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Log: conveyor CV-62 shows temperature at 23 C, max 76 C. Verdict?\nA:",
+      "output": "OK C-62 23 C <= < 66 C",
+      "exact": false,
+      "verdict": false,
+      "well_formed": false,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Log: conveyor CV-24 shows temperature at 31 C, max 82 C. Verdict?\nA:",
+      "output": "OK C-24 31 C <= < 6 C",
+      "exact": false,
+      "verdict": false,
+      "well_formed": false,
+      "faithful": false,
+      "true_statement": false
+     }
+    ]
+   },
+   "bpc": 1.986439689423091,
+   "trainable_params": 32768,
+   "seconds": 120.1471962928772,
+   "log": [
+    {
+     "step": 0,
+     "loss": 8.557676315307617
+    },
+    {
+     "step": 50,
+     "loss": 1.296533465385437
+    },
+    {
+     "step": 100,
+     "loss": 0.8629128336906433
+    },
+    {
+     "step": 150,
+     "loss": 0.5970173478126526
+    },
+    {
+     "step": 200,
+     "loss": 0.5074390769004822
+    },
+    {
+     "step": 250,
+     "loss": 0.4835032522678375
+    },
+    {
+     "step": 300,
+     "loss": 0.45482325553894043
+    },
+    {
+     "step": 350,
+     "loss": 0.4280634820461273
+    },
+    {
+     "step": 400,
+     "loss": 0.393570214509964
+    },
+    {
+     "step": 450,
+     "loss": 0.4117032587528229
+    },
+    {
+     "step": 500,
+     "loss": 0.39418327808380127
+    },
+    {
+     "step": 550,
+     "loss": 0.3750572204589844
+    },
+    {
+     "step": 600,
+     "loss": 0.3962908983230591
+    },
+    {
+     "step": 650,
+     "loss": 0.37494397163391113
+    },
+    {
+     "step": 700,
+     "loss": 0.3656868636608124
+    },
+    {
+     "step": 750,
+     "loss": 0.3596861660480499
+    },
+    {
+     "step": 800,
+     "loss": 0.3509320616722107
+    },
+    {
+     "step": 850,
+     "loss": 0.3416089415550232
+    },
+    {
+     "step": 900,
+     "loss": 0.3584793508052826
+    },
+    {
+     "step": 950,
+     "loss": 0.3424237072467804
+    },
+    {
+     "step": 999,
+     "loss": 0.34946444630622864
+    }
+   ],
+   "method": "LoRA r=4",
+   "seed": 2,
+   "deadband": 3,
+   "n_train": 6000
+  }
+ ],
+ "oracle": [
+  {
+   "test": {
+    "exact": 0.91,
+    "verdict": 0.91,
+    "well_formed": 1.0,
+    "faithful": 1.0,
+    "true_statement": 0.91,
+    "verdict_near_limit": 0.8859060402684564,
+    "verdict_far_from_limit": 0.9243027888446215,
+    "n": 400,
+    "samples": [
+     {
+      "prompt": "Q: Reading for pump P-98: vibration 13 mm/s (max 5 mm/s). Check it.\nA:",
+      "output": "ALARM P-98 13 mm/s > 5 mm/s",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Pressure on fan F-93: 7 bar vs limit 10 bar.\nA:",
+      "output": "OK F-93 7 bar <= 10 bar",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Current on pump P-04: 51 A vs limit 27 A.\nA:",
+      "output": "ALARM P-04 51 A > 27 A",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Motor M-03 temperature is 36 C, limit 85 C. Status?\nA:",
+      "output": "OK M-03 36 C <= 85 C",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Compressor C-56 temperature is 70 C, limit 79 C. Status?\nA:",
+      "output": "ALARM C-56 70 C > 79 C",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Vibration on compressor C-45: 11 mm/s vs limit 10 mm/s.\nA:",
+      "output": "ALARM C-45 11 mm/s > 10 mm/s",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Current on motor M-01: 37 A vs limit 36 A.\nA:",
+      "output": "OK M-01 37 A <= 36 A",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Fan F-28 temperature is 43 C, limit 48 C. Status?\nA:",
+      "output": "OK F-28 43 C <= 48 C",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     }
+    ]
+   },
+   "ood": {
+    "exact": 0.0,
+    "verdict": 0.64,
+    "well_formed": 0.9966666666666667,
+    "faithful": 0.0,
+    "true_statement": 0.64,
+    "verdict_near_limit": 0.40816326530612246,
+    "verdict_far_from_limit": 0.7524752475247525,
+    "n": 300,
+    "samples": [
+     {
+      "prompt": "Q: Log: turbine T-29 shows vibration at 5 mm/s, max 6 mm/s. Verdict?\nA:",
+      "output": "OK M-29 5 mm/s <= 6 mm/s",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Limit 60 C. Turbine T-66 temperature now 61 C. Status?\nA:",
+      "output": "OK M-66 61 C <= 99 C",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Log: conveyor CV-73 shows vibration at 9 mm/s, max 6 mm/s. Verdict?\nA:",
+      "output": "OK C-73 9 mm/s <= 6 mm/s",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Log: turbine T-80 shows pressure at 8 bar, max 5 bar. Verdict?\nA:",
+      "output": "ALARM M-80 8 bar > 5 bar",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Limit 6 bar. Conveyor CV-51 pressure now 3 bar. Status?\nA:",
+      "output": "OK C-51 3 bar <= <= 11 bar",
+      "exact": false,
+      "verdict": false,
+      "well_formed": false,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Limit 4 mm/s. Conveyor CV-68 vibration now 3 mm/s. Status?\nA:",
+      "output": "OK C-68 3 mm/s <= 11 mm/s",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Log: conveyor CV-62 shows temperature at 23 C, max 76 C. Verdict?\nA:",
+      "output": "OK C-62 23 C <= 76 C",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Log: conveyor CV-24 shows temperature at 31 C, max 82 C. Verdict?\nA:",
+      "output": "OK C-24 31 C <= 82 C",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     }
+    ]
+   },
+   "bpc": 4.257207288628008,
+   "trainable_params": 820096,
+   "seconds": 120.10432696342468,
+   "log": [
+    {
+     "step": 0,
+     "loss": 8.3256254196167
+    },
+    {
+     "step": 50,
+     "loss": 0.5534983277320862
+    },
+    {
+     "step": 100,
+     "loss": 0.14106588065624237
+    },
+    {
+     "step": 150,
+     "loss": 0.060172975063323975
+    },
+    {
+     "step": 200,
+     "loss": 0.03652094677090645
+    },
+    {
+     "step": 250,
+     "loss": 0.03225679695606232
+    },
+    {
+     "step": 300,
+     "loss": 0.03974594548344612
+    },
+    {
+     "step": 350,
+     "loss": 0.03251948580145836
+    },
+    {
+     "step": 400,
+     "loss": 0.01974163018167019
+    },
+    {
+     "step": 450,
+     "loss": 0.028676830232143402
+    },
+    {
+     "step": 500,
+     "loss": 0.01551853772252798
+    },
+    {
+     "step": 550,
+     "loss": 0.01707316003739834
+    },
+    {
+     "step": 600,
+     "loss": 0.026797078549861908
+    },
+    {
+     "step": 650,
+     "loss": 0.015427633188664913
+    },
+    {
+     "step": 700,
+     "loss": 0.012016539461910725
+    },
+    {
+     "step": 750,
+     "loss": 0.015204144641757011
+    },
+    {
+     "step": 800,
+     "loss": 0.016036612913012505
+    },
+    {
+     "step": 850,
+     "loss": 0.010232782922685146
+    },
+    {
+     "step": 900,
+     "loss": 0.008387921378016472
+    },
+    {
+     "step": 950,
+     "loss": 0.01223483495414257
+    },
+    {
+     "step": 999,
+     "loss": 0.007360212039202452
+    }
+   ],
+   "method": "full fine-tuning",
+   "seed": 0,
+   "deadband": 0,
+   "n_train": 6000
+  },
+  {
+   "test": {
+    "exact": 0.85,
+    "verdict": 0.85,
+    "well_formed": 1.0,
+    "faithful": 1.0,
+    "true_statement": 0.85,
+    "verdict_near_limit": 0.8120805369127517,
+    "verdict_far_from_limit": 0.8725099601593626,
+    "n": 400,
+    "samples": [
+     {
+      "prompt": "Q: Reading for pump P-98: vibration 13 mm/s (max 5 mm/s). Check it.\nA:",
+      "output": "ALARM P-98 13 mm/s > 5 mm/s",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Pressure on fan F-93: 7 bar vs limit 10 bar.\nA:",
+      "output": "OK F-93 7 bar <= 10 bar",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Current on pump P-04: 51 A vs limit 27 A.\nA:",
+      "output": "ALARM P-04 51 A > 27 A",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Motor M-03 temperature is 36 C, limit 85 C. Status?\nA:",
+      "output": "OK M-03 36 C <= 85 C",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Compressor C-56 temperature is 70 C, limit 79 C. Status?\nA:",
+      "output": "ALARM C-56 70 C > 79 C",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Vibration on compressor C-45: 11 mm/s vs limit 10 mm/s.\nA:",
+      "output": "ALARM C-45 11 mm/s > 10 mm/s",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Current on motor M-01: 37 A vs limit 36 A.\nA:",
+      "output": "ALARM M-01 37 A > 36 A",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Fan F-28 temperature is 43 C, limit 48 C. Status?\nA:",
+      "output": "OK F-28 43 C <= 48 C",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     }
+    ]
+   },
+   "ood": {
+    "exact": 0.0,
+    "verdict": 0.69,
+    "well_formed": 0.95,
+    "faithful": 0.0,
+    "true_statement": 0.6433333333333333,
+    "verdict_near_limit": 0.47959183673469385,
+    "verdict_far_from_limit": 0.7920792079207921,
+    "n": 300,
+    "samples": [
+     {
+      "prompt": "Q: Log: turbine T-29 shows vibration at 5 mm/s, max 6 mm/s. Verdict?\nA:",
+      "output": "OK M-29 5 mm/s <= 6 mm/s",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Limit 60 C. Turbine T-66 temperature now 61 C. Status?\nA:",
+      "output": "ALARM M-66 61 C > 81 C",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Log: conveyor CV-73 shows vibration at 9 mm/s, max 6 mm/s. Verdict?\nA:",
+      "output": "ALARM C-73 9 mm/s > 6 mm/s",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Log: turbine T-80 shows pressure at 8 bar, max 5 bar. Verdict?\nA:",
+      "output": "ALARM M-80 8 bar > 5 bar",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Limit 6 bar. Conveyor CV-51 pressure now 3 bar. Status?\nA:",
+      "output": "OK C-51 3 bar <= 9 bar",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Limit 4 mm/s. Conveyor CV-68 vibration now 3 mm/s. Status?\nA:",
+      "output": "OK C-68 3 mm/s <= 4 mm/s",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Log: conveyor CV-62 shows temperature at 23 C, max 76 C. Verdict?\nA:",
+      "output": "OK C-62 23 C <= 76 C",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Log: conveyor CV-24 shows temperature at 31 C, max 82 C. Verdict?\nA:",
+      "output": "OK C-24 31 C <= 82 C",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     }
+    ]
+   },
+   "bpc": 3.870703454072682,
+   "trainable_params": 820096,
+   "seconds": 120.29084277153015,
+   "log": [
+    {
+     "step": 0,
+     "loss": 8.02165699005127
+    },
+    {
+     "step": 50,
+     "loss": 0.5457843542098999
+    },
+    {
+     "step": 100,
+     "loss": 0.13477647304534912
+    },
+    {
+     "step": 150,
+     "loss": 0.0666142925620079
+    },
+    {
+     "step": 200,
+     "loss": 0.0465104803442955
+    },
+    {
+     "step": 250,
+     "loss": 0.04336430877447128
+    },
+    {
+     "step": 300,
+     "loss": 0.029896428808569908
+    },
+    {
+     "step": 350,
+     "loss": 0.03566862270236015
+    },
+    {
+     "step": 400,
+     "loss": 0.02797863446176052
+    },
+    {
+     "step": 450,
+     "loss": 0.02257746271789074
+    },
+    {
+     "step": 500,
+     "loss": 0.023974202573299408
+    },
+    {
+     "step": 550,
+     "loss": 0.03077399730682373
+    },
+    {
+     "step": 600,
+     "loss": 0.017900584265589714
+    },
+    {
+     "step": 650,
+     "loss": 0.014698952436447144
+    },
+    {
+     "step": 700,
+     "loss": 0.01843499392271042
+    },
+    {
+     "step": 750,
+     "loss": 0.01547199860215187
+    },
+    {
+     "step": 800,
+     "loss": 0.012745420448482037
+    },
+    {
+     "step": 850,
+     "loss": 0.013636616989970207
+    },
+    {
+     "step": 900,
+     "loss": 0.012026875279843807
+    },
+    {
+     "step": 950,
+     "loss": 0.008637269958853722
+    },
+    {
+     "step": 999,
+     "loss": 0.013905624859035015
+    }
+   ],
+   "method": "full fine-tuning",
+   "seed": 1,
+   "deadband": 0,
+   "n_train": 6000
+  },
+  {
+   "test": {
+    "exact": 0.885,
+    "verdict": 0.885,
+    "well_formed": 1.0,
+    "faithful": 1.0,
+    "true_statement": 0.885,
+    "verdict_near_limit": 0.912751677852349,
+    "verdict_far_from_limit": 0.8685258964143426,
+    "n": 400,
+    "samples": [
+     {
+      "prompt": "Q: Reading for pump P-98: vibration 13 mm/s (max 5 mm/s). Check it.\nA:",
+      "output": "ALARM P-98 13 mm/s > 5 mm/s",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Pressure on fan F-93: 7 bar vs limit 10 bar.\nA:",
+      "output": "OK F-93 7 bar <= 10 bar",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Current on pump P-04: 51 A vs limit 27 A.\nA:",
+      "output": "ALARM P-04 51 A > 27 A",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Motor M-03 temperature is 36 C, limit 85 C. Status?\nA:",
+      "output": "OK M-03 36 C <= 85 C",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Compressor C-56 temperature is 70 C, limit 79 C. Status?\nA:",
+      "output": "ALARM C-56 70 C > 79 C",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Vibration on compressor C-45: 11 mm/s vs limit 10 mm/s.\nA:",
+      "output": "ALARM C-45 11 mm/s > 10 mm/s",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Current on motor M-01: 37 A vs limit 36 A.\nA:",
+      "output": "ALARM M-01 37 A > 36 A",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Fan F-28 temperature is 43 C, limit 48 C. Status?\nA:",
+      "output": "OK F-28 43 C <= 48 C",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     }
+    ]
+   },
+   "ood": {
+    "exact": 0.0,
+    "verdict": 0.81,
+    "well_formed": 0.9866666666666667,
+    "faithful": 0.0,
+    "true_statement": 0.7366666666666667,
+    "verdict_near_limit": 0.8061224489795918,
+    "verdict_far_from_limit": 0.8118811881188119,
+    "n": 300,
+    "samples": [
+     {
+      "prompt": "Q: Log: turbine T-29 shows vibration at 5 mm/s, max 6 mm/s. Verdict?\nA:",
+      "output": "OK M-29 5 mm/s <= 6 mm/s",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Limit 60 C. Turbine T-66 temperature now 61 C. Status?\nA:",
+      "output": "ALARM M-66 61 C > 11 C",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Log: conveyor CV-73 shows vibration at 9 mm/s, max 6 mm/s. Verdict?\nA:",
+      "output": "ALARM C-73 9 mm/s > 6 mm/s",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Log: turbine T-80 shows pressure at 8 bar, max 5 bar. Verdict?\nA:",
+      "output": "ALARM M-80 8 bar > 5 bar",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Limit 6 bar. Conveyor CV-51 pressure now 3 bar. Status?\nA:",
+      "output": "OK C-51 3 bar <= 3 bar",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Limit 4 mm/s. Conveyor CV-68 vibration now 3 mm/s. Status?\nA:",
+      "output": "OK C-68 3 mm/s <= 3 mm/s",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Log: conveyor CV-62 shows temperature at 23 C, max 76 C. Verdict?\nA:",
+      "output": "OK C-62 23 C <= 76 C",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Log: conveyor CV-24 shows temperature at 31 C, max 82 C. Verdict?\nA:",
+      "output": "OK C-24 31 C <= 82 C",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     }
+    ]
+   },
+   "bpc": 4.222816261900274,
+   "trainable_params": 820096,
+   "seconds": 118.78085994720459,
+   "log": [
+    {
+     "step": 0,
+     "loss": 8.07758617401123
+    },
+    {
+     "step": 50,
+     "loss": 0.5401556491851807
+    },
+    {
+     "step": 100,
+     "loss": 0.16050145030021667
+    },
+    {
+     "step": 150,
+     "loss": 0.0723770335316658
+    },
+    {
+     "step": 200,
+     "loss": 0.04409594088792801
+    },
+    {
+     "step": 250,
+     "loss": 0.035749949514865875
+    },
+    {
+     "step": 300,
+     "loss": 0.04500000178813934
+    },
+    {
+     "step": 350,
+     "loss": 0.037876617163419724
+    },
+    {
+     "step": 400,
+     "loss": 0.029705699533224106
+    },
+    {
+     "step": 450,
+     "loss": 0.03589552268385887
+    },
+    {
+     "step": 500,
+     "loss": 0.02252788282930851
+    },
+    {
+     "step": 550,
+     "loss": 0.01966949924826622
+    },
+    {
+     "step": 600,
+     "loss": 0.01309165544807911
+    },
+    {
+     "step": 650,
+     "loss": 0.01737942546606064
+    },
+    {
+     "step": 700,
+     "loss": 0.018638882786035538
+    },
+    {
+     "step": 750,
+     "loss": 0.02070767991244793
+    },
+    {
+     "step": 800,
+     "loss": 0.010370687581598759
+    },
+    {
+     "step": 850,
+     "loss": 0.01042308658361435
+    },
+    {
+     "step": 900,
+     "loss": 0.014803804457187653
+    },
+    {
+     "step": 950,
+     "loss": 0.00429676054045558
+    },
+    {
+     "step": 999,
+     "loss": 0.006997007876634598
+    }
+   ],
+   "method": "full fine-tuning",
+   "seed": 2,
+   "deadband": 0,
+   "n_train": 6000
+  }
+ ],
+ "fix": [
+  {
+   "method": "DPO",
+   "seed": 0,
+   "test": {
+    "exact": 0.7325,
+    "verdict": 0.74,
+    "well_formed": 0.9175,
+    "faithful": 0.91,
+    "true_statement": 0.74,
+    "verdict_near_limit": 0.6778523489932886,
+    "verdict_far_from_limit": 0.7768924302788844,
+    "n": 400,
+    "samples": [
+     {
+      "prompt": "Q: Reading for pump P-98: vibration 13 mm/s (max 5 mm/s). Check it.\nA:",
+      "output": "ALARM P-98 13 mm/s > 5 mm/s",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Pressure on fan F-93: 7 bar vs limit 10 bar.\nA:",
+      "output": "OK F-93 7 bar <= 10 bar",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Current on pump P-04: 51 A vs limit 27 A.\nA:",
+      "output": "ALARM P-04 51 A > 27 A",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Motor M-03 temperature is 36 C, limit 85 C. Status?\nA:",
+      "output": "OK M-03 36 C <= 85 C",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Compressor C-56 temperature is 70 C, limit 79 C. Status?\nA:",
+      "output": "OK C-56 70 C <= 79 C",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Vibration on compressor C-45: 11 mm/s vs limit 10 mm/s.\nA:",
+      "output": "ALARM C-45 11 mm/s > 10 mm/s",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Current on motor M-01: 37 A vs limit 36 A.\nA:",
+      "output": "OK M-01 37 A <= 36 A",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Fan F-28 temperature is 43 C, limit 48 C. Status?\nA:",
+      "output": "OK F-28 43 C <= 48 C",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     }
+    ]
+   },
+   "ood": {
+    "exact": 0.0,
+    "verdict": 0.45,
+    "well_formed": 0.6166666666666667,
+    "faithful": 0.0,
+    "true_statement": 0.4533333333333333,
+    "verdict_near_limit": 0.5816326530612245,
+    "verdict_far_from_limit": 0.38613861386138615,
+    "n": 300,
+    "samples": [
+     {
+      "prompt": "Q: Log: turbine T-29 shows vibration at 5 mm/s, max 6 mm/s. Verdict?\nA:",
+      "output": "lLALARM 16 6 mm/s > 6 mm/s",
+      "exact": false,
+      "verdict": false,
+      "well_formed": false,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Limit 60 C. Turbine T-66 temperature now 61 C. Status?\nA:",
+      "output": "ALARM M-66 61 C > 77 C",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Log: conveyor CV-73 shows vibration at 9 mm/s, max 6 mm/s. Verdict?\nA:",
+      "output": "17 mm/s <= 6 mm/s",
+      "exact": false,
+      "verdict": false,
+      "well_formed": false,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Log: turbine T-80 shows pressure at 8 bar, max 5 bar. Verdict?\nA:",
+      "output": "18 i 5 bar",
+      "exact": false,
+      "verdict": false,
+      "well_formed": false,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Limit 6 bar. Conveyor CV-51 pressure now 3 bar. Status?\nA:",
+      "output": "OK C-51 3 bar <= 11 bar",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Limit 4 mm/s. Conveyor CV-68 vibration now 3 mm/s. Status?\nA:",
+      "output": "motm/smRM-68 3 mm/s > 8 mm/s",
+      "exact": false,
+      "verdict": false,
+      "well_formed": false,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Log: conveyor CV-62 shows temperature at 23 C, max 76 C. Verdict?\nA:",
+      "output": "lALARM C-62 23 C > 76 C",
+      "exact": false,
+      "verdict": false,
+      "well_formed": false,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Log: conveyor CV-24 shows temperature at 31 C, max 82 C. Verdict?\nA:",
+      "output": "log 12 bar",
+      "exact": false,
+      "verdict": false,
+      "well_formed": false,
+      "faithful": false,
+      "true_statement": false
+     }
+    ]
+   },
+   "bpc": 4.0221826772649285,
+   "log": [
+    {
+     "step": 0,
+     "loss": 0.6931471824645996,
+     "reward_accuracy": 0.0,
+     "chosen_shift": 0.0,
+     "rejected_shift": 0.0
+    },
+    {
+     "step": 10,
+     "loss": 0.6772060394287109,
+     "reward_accuracy": 0.625,
+     "chosen_shift": 0.08132950961589813,
+     "rejected_shift": -0.25700390338897705
+    },
+    {
+     "step": 20,
+     "loss": 0.666828453540802,
+     "reward_accuracy": 0.625,
+     "chosen_shift": 0.42243722081184387,
+     "rejected_shift": -0.1735856831073761
+    },
+    {
+     "step": 30,
+     "loss": 0.6391544342041016,
+     "reward_accuracy": 0.6875,
+     "chosen_shift": 0.1293063461780548,
+     "rejected_shift": -1.2315809726715088
+    },
+    {
+     "step": 40,
+     "loss": 0.6801139712333679,
+     "reward_accuracy": 0.625,
+     "chosen_shift": -0.5092684030532837,
+     "rejected_shift": -1.00759756565094
+    },
+    {
+     "step": 50,
+     "loss": 0.6619179844856262,
+     "reward_accuracy": 0.6875,
+     "chosen_shift": -0.7103798389434814,
+     "rejected_shift": -1.594606637954712
+    },
+    {
+     "step": 60,
+     "loss": 0.6247183084487915,
+     "reward_accuracy": 0.75,
+     "chosen_shift": 0.2622699439525604,
+     "rejected_shift": -1.2772480249404907
+    },
+    {
+     "step": 70,
+     "loss": 0.6089146137237549,
+     "reward_accuracy": 0.75,
+     "chosen_shift": -0.009809762239456177,
+     "rejected_shift": -2.087566614151001
+    },
+    {
+     "step": 80,
+     "loss": 0.5562579035758972,
+     "reward_accuracy": 0.8125,
+     "chosen_shift": -0.22832553088665009,
+     "rejected_shift": -3.5427680015563965
+    },
+    {
+     "step": 90,
+     "loss": 0.5823990106582642,
+     "reward_accuracy": 0.75,
+     "chosen_shift": -0.094327911734581,
+     "rejected_shift": -2.6895885467529297
+    },
+    {
+     "step": 100,
+     "loss": 0.5697420239448547,
+     "reward_accuracy": 0.8125,
+     "chosen_shift": 0.07037294656038284,
+     "rejected_shift": -2.8724308013916016
+    },
+    {
+     "step": 110,
+     "loss": 0.5798170566558838,
+     "reward_accuracy": 0.75,
+     "chosen_shift": -0.12271049618721008,
+     "rejected_shift": -2.9292256832122803
+    },
+    {
+     "step": 120,
+     "loss": 0.6008667945861816,
+     "reward_accuracy": 0.6875,
+     "chosen_shift": -0.12654367089271545,
+     "rejected_shift": -2.2878735065460205
+    },
+    {
+     "step": 130,
+     "loss": 0.575734555721283,
+     "reward_accuracy": 0.8125,
+     "chosen_shift": -0.3195924162864685,
+     "rejected_shift": -3.2306644916534424
+    },
+    {
+     "step": 140,
+     "loss": 0.5727346539497375,
+     "reward_accuracy": 0.75,
+     "chosen_shift": -0.44591328501701355,
+     "rejected_shift": -3.229111433029175
+    },
+    {
+     "step": 149,
+     "loss": 0.5214371681213379,
+     "reward_accuracy": 0.875,
+     "chosen_shift": 0.2332621067762375,
+     "rejected_shift": -3.79518461227417
+    }
+   ]
+  },
+  {
+   "method": "DPO + NLL",
+   "seed": 0,
+   "test": {
+    "exact": 0.7875,
+    "verdict": 0.795,
+    "well_formed": 0.985,
+    "faithful": 0.975,
+    "true_statement": 0.795,
+    "verdict_near_limit": 0.7114093959731543,
+    "verdict_far_from_limit": 0.8446215139442231,
+    "n": 400,
+    "samples": [
+     {
+      "prompt": "Q: Reading for pump P-98: vibration 13 mm/s (max 5 mm/s). Check it.\nA:",
+      "output": "ALARM P-98 13 mm/s > 5 mm/s",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Pressure on fan F-93: 7 bar vs limit 10 bar.\nA:",
+      "output": "OK F-93 7 bar <= 10 bar",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Current on pump P-04: 51 A vs limit 27 A.\nA:",
+      "output": "ALARM P-04 51 A > 27 A",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Motor M-03 temperature is 36 C, limit 85 C. Status?\nA:",
+      "output": "OK M-03 36 C <= 85 C",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Compressor C-56 temperature is 70 C, limit 79 C. Status?\nA:",
+      "output": "OK C-56 70 C <= 79 C",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Vibration on compressor C-45: 11 mm/s vs limit 10 mm/s.\nA:",
+      "output": "ALARM C-45 11 mm/s > 10 mm/s",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Current on motor M-01: 37 A vs limit 36 A.\nA:",
+      "output": "OK M-01 37 A <= 36 A",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Fan F-28 temperature is 43 C, limit 48 C. Status?\nA:",
+      "output": "OK F-28 43 C <= 48 C",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     }
+    ]
+   },
+   "ood": {
+    "exact": 0.0,
+    "verdict": 0.5033333333333333,
+    "well_formed": 0.7,
+    "faithful": 0.0,
+    "true_statement": 0.5066666666666667,
+    "verdict_near_limit": 0.6530612244897959,
+    "verdict_far_from_limit": 0.4306930693069307,
+    "n": 300,
+    "samples": [
+     {
+      "prompt": "Q: Log: turbine T-29 shows vibration at 5 mm/s, max 6 mm/s. Verdict?\nA:",
+      "output": "lLALARM 16 7 mm/s > 67 mm/s",
+      "exact": false,
+      "verdict": false,
+      "well_formed": false,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Limit 60 C. Turbine T-66 temperature now 61 C. Status?\nA:",
+      "output": "ALARM M-66 61 C > 77 C",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Log: conveyor CV-73 shows vibration at 9 mm/s, max 6 mm/s. Verdict?\nA:",
+      "output": "lLARM 87 mm/s > 6 mm/s",
+      "exact": false,
+      "verdict": false,
+      "well_formed": false,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Log: turbine T-80 shows pressure at 8 bar, max 5 bar. Verdict?\nA:",
+      "output": "OK M-80 8 bar <= 5 bar",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Limit 6 bar. Conveyor CV-51 pressure now 3 bar. Status?\nA:",
+      "output": "OK C-51 3 bar <= 11 bar",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Limit 4 mm/s. Conveyor CV-68 vibration now 3 mm/s. Status?\nA:",
+      "output": "moARM C-68 3 mm/s > 8 mm/s",
+      "exact": false,
+      "verdict": false,
+      "well_formed": false,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Log: conveyor CV-62 shows temperature at 23 C, max 76 C. Verdict?\nA:",
+      "output": "lALARM C-62 23 C > 76 C",
+      "exact": false,
+      "verdict": false,
+      "well_formed": false,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Log: conveyor CV-24 shows temperature at 31 C, max 82 C. Verdict?\nA:",
+      "output": "log 12 bar",
+      "exact": false,
+      "verdict": false,
+      "well_formed": false,
+      "faithful": false,
+      "true_statement": false
+     }
+    ]
+   },
+   "bpc": 4.043117781389157,
+   "log": [
+    {
+     "step": 0,
+     "loss": 0.7432501316070557,
+     "reward_accuracy": 0.0,
+     "chosen_shift": 0.0,
+     "rejected_shift": 0.0
+    },
+    {
+     "step": 10,
+     "loss": 0.6944907307624817,
+     "reward_accuracy": 0.625,
+     "chosen_shift": 0.07016775757074356,
+     "rejected_shift": -0.180513396859169
+    },
+    {
+     "step": 20,
+     "loss": 0.7031599283218384,
+     "reward_accuracy": 0.5625,
+     "chosen_shift": 0.5311462879180908,
+     "rejected_shift": -0.05212927609682083
+    },
+    {
+     "step": 30,
+     "loss": 0.6799381375312805,
+     "reward_accuracy": 0.6875,
+     "chosen_shift": 0.2233850657939911,
+     "rejected_shift": -1.0735387802124023
+    },
+    {
+     "step": 40,
+     "loss": 0.7330390810966492,
+     "reward_accuracy": 0.5625,
+     "chosen_shift": -0.30324065685272217,
+     "rejected_shift": -0.7482285499572754
+    },
+    {
+     "step": 50,
+     "loss": 0.707934558391571,
+     "reward_accuracy": 0.6875,
+     "chosen_shift": -0.15093868970870972,
+     "rejected_shift": -0.998416543006897
+    },
+    {
+     "step": 60,
+     "loss": 0.6638805270195007,
+     "reward_accuracy": 0.75,
+     "chosen_shift": 0.3980449438095093,
+     "rejected_shift": -0.7526954412460327
+    },
+    {
+     "step": 70,
+     "loss": 0.6603357791900635,
+     "reward_accuracy": 0.6875,
+     "chosen_shift": 0.13891920447349548,
+     "rejected_shift": -1.220318078994751
+    },
+    {
+     "step": 80,
+     "loss": 0.6123687028884888,
+     "reward_accuracy": 0.8125,
+     "chosen_shift": 0.1871306598186493,
+     "rejected_shift": -2.5307650566101074
+    },
+    {
+     "step": 90,
+     "loss": 0.6349755525588989,
+     "reward_accuracy": 0.75,
+     "chosen_shift": 0.17782796919345856,
+     "rejected_shift": -1.7772741317749023
+    },
+    {
+     "step": 100,
+     "loss": 0.6073721647262573,
+     "reward_accuracy": 0.875,
+     "chosen_shift": 0.513741135597229,
+     "rejected_shift": -1.9441545009613037
+    },
+    {
+     "step": 110,
+     "loss": 0.6328033208847046,
+     "reward_accuracy": 0.8125,
+     "chosen_shift": 0.1935194581747055,
+     "rejected_shift": -2.1635284423828125
+    },
+    {
+     "step": 120,
+     "loss": 0.6489903926849365,
+     "reward_accuracy": 0.75,
+     "chosen_shift": 0.06783688068389893,
+     "rejected_shift": -1.5164029598236084
+    },
+    {
+     "step": 130,
+     "loss": 0.6257216334342957,
+     "reward_accuracy": 0.8125,
+     "chosen_shift": 0.30135640501976013,
+     "rejected_shift": -2.370690107345581
+    },
+    {
+     "step": 140,
+     "loss": 0.6182842254638672,
+     "reward_accuracy": 0.8125,
+     "chosen_shift": 0.15872444212436676,
+     "rejected_shift": -1.916985034942627
+    },
+    {
+     "step": 149,
+     "loss": 0.5610132217407227,
+     "reward_accuracy": 0.875,
+     "chosen_shift": 0.6846947073936462,
+     "rejected_shift": -2.588801383972168
+    }
+   ]
+  },
+  {
+   "method": "SFT on the corrected cases",
+   "seed": 0,
+   "test": {
+    "exact": 0.81,
+    "verdict": 0.81,
+    "well_formed": 0.9975,
+    "faithful": 0.9975,
+    "true_statement": 0.81,
+    "verdict_near_limit": 0.7651006711409396,
+    "verdict_far_from_limit": 0.8366533864541833,
+    "n": 400,
+    "samples": [
+     {
+      "prompt": "Q: Reading for pump P-98: vibration 13 mm/s (max 5 mm/s). Check it.\nA:",
+      "output": "ALARM P-98 13 mm/s > 5 mm/s",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Pressure on fan F-93: 7 bar vs limit 10 bar.\nA:",
+      "output": "OK F-93 7 bar <= 10 bar",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Current on pump P-04: 51 A vs limit 27 A.\nA:",
+      "output": "OK P-04 51 A <= 27 A",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Motor M-03 temperature is 36 C, limit 85 C. Status?\nA:",
+      "output": "OK M-03 36 C <= 85 C",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Compressor C-56 temperature is 70 C, limit 79 C. Status?\nA:",
+      "output": "ALARM C-56 70 C > 79 C",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Vibration on compressor C-45: 11 mm/s vs limit 10 mm/s.\nA:",
+      "output": "ALARM C-45 11 mm/s > 10 mm/s",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Current on motor M-01: 37 A vs limit 36 A.\nA:",
+      "output": "OK M-01 37 A <= 36 A",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Fan F-28 temperature is 43 C, limit 48 C. Status?\nA:",
+      "output": "OK F-28 43 C <= 48 C",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     }
+    ]
+   },
+   "ood": {
+    "exact": 0.0,
+    "verdict": 0.6566666666666666,
+    "well_formed": 0.99,
+    "faithful": 0.0,
+    "true_statement": 0.66,
+    "verdict_near_limit": 0.6530612244897959,
+    "verdict_far_from_limit": 0.6584158415841584,
+    "n": 300,
+    "samples": [
+     {
+      "prompt": "Q: Log: turbine T-29 shows vibration at 5 mm/s, max 6 mm/s. Verdict?\nA:",
+      "output": "OK M-29 5 mm/s <= 6 mm/s",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Limit 60 C. Turbine T-66 temperature now 61 C. Status?\nA:",
+      "output": "ALARM M-66 61 C > 11 C",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Log: conveyor CV-73 shows vibration at 9 mm/s, max 6 mm/s. Verdict?\nA:",
+      "output": "OK C-73 9 mm/s <= 6 mm/s",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Log: turbine T-80 shows pressure at 8 bar, max 5 bar. Verdict?\nA:",
+      "output": "OK M-80 8 bar <= 5 bar",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Limit 6 bar. Conveyor CV-51 pressure now 3 bar. Status?\nA:",
+      "output": "OK C-51 3 bar <= 11 bar",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Limit 4 mm/s. Conveyor CV-68 vibration now 3 mm/s. Status?\nA:",
+      "output": "ALARM C-68 3 mm/s > 8 mm/s",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Log: conveyor CV-62 shows temperature at 23 C, max 76 C. Verdict?\nA:",
+      "output": "OK C-62 23 C <= 76 C",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Log: conveyor CV-24 shows temperature at 31 C, max 82 C. Verdict?\nA:",
+      "output": "OK C-24 31 C <= 82 C",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     }
+    ]
+   },
+   "bpc": 4.127116171862363,
+   "trainable_params": 820096,
+   "seconds": 9.215891122817993,
+   "log": [
+    {
+     "step": 0,
+     "loss": 0.05161813274025917
+    },
+    {
+     "step": 50,
+     "loss": 0.0209210142493248
+    },
+    {
+     "step": 100,
+     "loss": 0.011792448349297047
+    },
+    {
+     "step": 149,
+     "loss": 0.009268784895539284
+    }
+   ]
+  },
+  {
+   "method": "DPO",
+   "seed": 1,
+   "test": {
+    "exact": 0.57,
+    "verdict": 0.5725,
+    "well_formed": 0.725,
+    "faithful": 0.7225,
+    "true_statement": 0.5725,
+    "verdict_near_limit": 0.5570469798657718,
+    "verdict_far_from_limit": 0.5816733067729084,
+    "n": 400,
+    "samples": [
+     {
+      "prompt": "Q: Reading for pump P-98: vibration 13 mm/s (max 5 mm/s). Check it.\nA:",
+      "output": "ALARM P-98 13 mm/s > 5 mm/s",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Pressure on fan F-93: 7 bar vs limit 10 bar.\nA:",
+      "output": "K 210 bar <= 10 bar",
+      "exact": false,
+      "verdict": false,
+      "well_formed": false,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Current on pump P-04: 51 A vs limit 27 A.\nA:",
+      "output": "ALARM P-04 51 A > 27 A",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Motor M-03 temperature is 36 C, limit 85 C. Status?\nA:",
+      "output": "OK M-03 36 C <= 85 C",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Compressor C-56 temperature is 70 C, limit 79 C. Status?\nA:",
+      "output": "OK C-56 70 C <= 79 C",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Vibration on compressor C-45: 11 mm/s vs limit 10 mm/s.\nA:",
+      "output": "ALARM C-45 11 mm/s > 10 mm/s",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Current on motor M-01: 37 A vs limit 36 A.\nA:",
+      "output": "ALARM M-01 37 A > 36 A",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Fan F-28 temperature is 43 C, limit 48 C. Status?\nA:",
+      "output": "OK F-28 43 C <= 48 C",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     }
+    ]
+   },
+   "ood": {
+    "exact": 0.0,
+    "verdict": 0.31666666666666665,
+    "well_formed": 0.42333333333333334,
+    "faithful": 0.0,
+    "true_statement": 0.3233333333333333,
+    "verdict_near_limit": 0.32653061224489793,
+    "verdict_far_from_limit": 0.3118811881188119,
+    "n": 300,
+    "samples": [
+     {
+      "prompt": "Q: Log: turbine T-29 shows vibration at 5 mm/s, max 6 mm/s. Verdict?\nA:",
+      "output": "loimp M-29 5 mm/s > 6 mm/s",
+      "exact": false,
+      "verdict": false,
+      "well_formed": false,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Limit 60 C. Turbine T-66 temperature now 61 C. Status?\nA:",
+      "output": "ALARM 18 88 C",
+      "exact": false,
+      "verdict": false,
+      "well_formed": false,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Log: conveyor CV-73 shows vibration at 9 mm/s, max 6 mm/s. Verdict?\nA:",
+      "output": "lLARM 88 mm/s > 88 mm/s",
+      "exact": false,
+      "verdict": false,
+      "well_formed": false,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Log: turbine T-80 shows pressure at 8 bar, max 5 bar. Verdict?\nA:",
+      "output": "bea tLALARM M-80 6 bar > 5 bar",
+      "exact": false,
+      "verdict": false,
+      "well_formed": false,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Limit 6 bar. Conveyor CV-51 pressure now 3 bar. Status?\nA:",
+      "output": "8 mmm/s",
+      "exact": false,
+      "verdict": false,
+      "well_formed": false,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Limit 4 mm/s. Conveyor CV-68 vibration now 3 mm/s. Status?\nA:",
+      "output": "11 mmm/s",
+      "exact": false,
+      "verdict": false,
+      "well_formed": false,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Log: conveyor CV-62 shows temperature at 23 C, max 76 C. Verdict?\nA:",
+      "output": "ALARM C-62 23 C > 76 C",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Log: conveyor CV-24 shows temperature at 31 C, max 82 C. Verdict?\nA:",
+      "output": "loimp 78 C-2 32 C <= 78 C",
+      "exact": false,
+      "verdict": false,
+      "well_formed": false,
+      "faithful": false,
+      "true_statement": false
+     }
+    ]
+   },
+   "bpc": 3.8915828358180304,
+   "log": [
+    {
+     "step": 0,
+     "loss": 0.6931471824645996,
+     "reward_accuracy": 0.0,
+     "chosen_shift": 0.0,
+     "rejected_shift": 0.0
+    },
+    {
+     "step": 10,
+     "loss": 0.6813947558403015,
+     "reward_accuracy": 0.625,
+     "chosen_shift": 0.15639494359493256,
+     "rejected_shift": -0.089877650141716
+    },
+    {
+     "step": 20,
+     "loss": 0.6165162324905396,
+     "reward_accuracy": 0.875,
+     "chosen_shift": 0.609403133392334,
+     "rejected_shift": -1.0556915998458862
+    },
+    {
+     "step": 30,
+     "loss": 0.6735156774520874,
+     "reward_accuracy": 0.625,
+     "chosen_shift": 0.023490937426686287,
+     "rejected_shift": -0.5226553678512573
+    },
+    {
+     "step": 40,
+     "loss": 0.5835995674133301,
+     "reward_accuracy": 0.875,
+     "chosen_shift": -0.5002272129058838,
+     "rejected_shift": -3.0150420665740967
+    },
+    {
+     "step": 50,
+     "loss": 0.525342583656311,
+     "reward_accuracy": 0.8125,
+     "chosen_shift": -0.15480110049247742,
+     "rejected_shift": -4.4331231117248535
+    },
+    {
+     "step": 60,
+     "loss": 0.5751523375511169,
+     "reward_accuracy": 0.9375,
+     "chosen_shift": -1.1399195194244385,
+     "rejected_shift": -3.9051260948181152
+    },
+    {
+     "step": 70,
+     "loss": 0.6377848982810974,
+     "reward_accuracy": 0.625,
+     "chosen_shift": -2.0827767848968506,
+     "rejected_shift": -3.7070794105529785
+    },
+    {
+     "step": 80,
+     "loss": 0.5635609030723572,
+     "reward_accuracy": 0.9375,
+     "chosen_shift": -1.7396738529205322,
+     "rejected_shift": -4.811142444610596
+    },
+    {
+     "step": 90,
+     "loss": 0.6107179522514343,
+     "reward_accuracy": 0.6875,
+     "chosen_shift": -0.8314582109451294,
+     "rejected_shift": -3.155247211456299
+    },
+    {
+     "step": 100,
+     "loss": 0.5461776256561279,
+     "reward_accuracy": 0.8125,
+     "chosen_shift": -1.734951376914978,
+     "rejected_shift": -5.626241683959961
+    },
+    {
+     "step": 110,
+     "loss": 0.5612612366676331,
+     "reward_accuracy": 0.875,
+     "chosen_shift": -1.5952860116958618,
+     "rejected_shift": -4.7944841384887695
+    },
+    {
+     "step": 120,
+     "loss": 0.5020754337310791,
+     "reward_accuracy": 0.9375,
+     "chosen_shift": -0.403576523065567,
+     "rejected_shift": -4.9915852546691895
+    },
+    {
+     "step": 130,
+     "loss": 0.46425050497055054,
+     "reward_accuracy": 0.9375,
+     "chosen_shift": -0.10600161552429199,
+     "rejected_shift": -5.979094505310059
+    },
+    {
+     "step": 140,
+     "loss": 0.48100560903549194,
+     "reward_accuracy": 0.875,
+     "chosen_shift": -1.0967552661895752,
+     "rejected_shift": -6.544413089752197
+    },
+    {
+     "step": 149,
+     "loss": 0.5020705461502075,
+     "reward_accuracy": 0.9375,
+     "chosen_shift": -1.2031681537628174,
+     "rejected_shift": -5.622594833374023
+    }
+   ]
+  },
+  {
+   "method": "DPO + NLL",
+   "seed": 1,
+   "test": {
+    "exact": 0.8025,
+    "verdict": 0.8025,
+    "well_formed": 0.99,
+    "faithful": 0.99,
+    "true_statement": 0.8025,
+    "verdict_near_limit": 0.7315436241610739,
+    "verdict_far_from_limit": 0.8446215139442231,
+    "n": 400,
+    "samples": [
+     {
+      "prompt": "Q: Reading for pump P-98: vibration 13 mm/s (max 5 mm/s). Check it.\nA:",
+      "output": "ALARM P-98 13 mm/s > 5 mm/s",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Pressure on fan F-93: 7 bar vs limit 10 bar.\nA:",
+      "output": "OK F-93 7 bar <= 10 bar",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Current on pump P-04: 51 A vs limit 27 A.\nA:",
+      "output": "ALARM P-04 51 A > 27 A",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Motor M-03 temperature is 36 C, limit 85 C. Status?\nA:",
+      "output": "OK M-03 36 C <= 85 C",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Compressor C-56 temperature is 70 C, limit 79 C. Status?\nA:",
+      "output": "OK C-56 70 C <= 79 C",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Vibration on compressor C-45: 11 mm/s vs limit 10 mm/s.\nA:",
+      "output": "ALARM C-45 11 mm/s > 10 mm/s",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Current on motor M-01: 37 A vs limit 36 A.\nA:",
+      "output": "ALARM M-01 37 A > 36 A",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Fan F-28 temperature is 43 C, limit 48 C. Status?\nA:",
+      "output": "OK F-28 43 C <= 48 C",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     }
+    ]
+   },
+   "ood": {
+    "exact": 0.0033333333333333335,
+    "verdict": 0.5233333333333333,
+    "well_formed": 0.7566666666666667,
+    "faithful": 0.0033333333333333335,
+    "true_statement": 0.5466666666666666,
+    "verdict_near_limit": 0.673469387755102,
+    "verdict_far_from_limit": 0.4504950495049505,
+    "n": 300,
+    "samples": [
+     {
+      "prompt": "Q: Log: turbine T-29 shows vibration at 5 mm/s, max 6 mm/s. Verdict?\nA:",
+      "output": "loimp M-29 5 mm/s > 6 mm/s",
+      "exact": false,
+      "verdict": false,
+      "well_formed": false,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Limit 60 C. Turbine T-66 temperature now 61 C. Status?\nA:",
+      "output": "ALARM 18 88 C",
+      "exact": false,
+      "verdict": false,
+      "well_formed": false,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Log: conveyor CV-73 shows vibration at 9 mm/s, max 6 mm/s. Verdict?\nA:",
+      "output": "ALARM C-73 9 mm/s > 6 mm/s",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Log: turbine T-80 shows pressure at 8 bar, max 5 bar. Verdict?\nA:",
+      "output": "ALARM M-80 5 bar > 5 bar",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Limit 6 bar. Conveyor CV-51 pressure now 3 bar. Status?\nA:",
+      "output": "OK C-51 3 bar <= 9 bar",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Limit 4 mm/s. Conveyor CV-68 vibration now 3 mm/s. Status?\nA:",
+      "output": "ALARM C-68 3 mm/s > 11 mm/s",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Log: conveyor CV-62 shows temperature at 23 C, max 76 C. Verdict?\nA:",
+      "output": "ALARM C-62 23 C > 76 C",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Log: conveyor CV-24 shows temperature at 31 C, max 82 C. Verdict?\nA:",
+      "output": "ALARM C-24 32 C > 82 C",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": false
+     }
+    ]
+   },
+   "bpc": 3.888341306814568,
+   "log": [
+    {
+     "step": 0,
+     "loss": 0.7318881750106812,
+     "reward_accuracy": 0.0,
+     "chosen_shift": 0.0,
+     "rejected_shift": 0.0
+    },
+    {
+     "step": 10,
+     "loss": 0.7163614630699158,
+     "reward_accuracy": 0.5,
+     "chosen_shift": 0.1904936283826828,
+     "rejected_shift": -0.049491897225379944
+    },
+    {
+     "step": 20,
+     "loss": 0.6362511515617371,
+     "reward_accuracy": 0.75,
+     "chosen_shift": 0.7193132638931274,
+     "rejected_shift": -0.9200061559677124
+    },
+    {
+     "step": 30,
+     "loss": 0.7277177572250366,
+     "reward_accuracy": 0.625,
+     "chosen_shift": 0.1443876326084137,
+     "rejected_shift": -0.2524595260620117
+    },
+    {
+     "step": 40,
+     "loss": 0.626319408416748,
+     "reward_accuracy": 0.8125,
+     "chosen_shift": 0.3194034993648529,
+     "rejected_shift": -1.9830232858657837
+    },
+    {
+     "step": 50,
+     "loss": 0.5764956474304199,
+     "reward_accuracy": 0.75,
+     "chosen_shift": 0.8205593824386597,
+     "rejected_shift": -2.9696693420410156
+    },
+    {
+     "step": 60,
+     "loss": 0.623822808265686,
+     "reward_accuracy": 0.9375,
+     "chosen_shift": 0.634443461894989,
+     "rejected_shift": -1.76857590675354
+    },
+    {
+     "step": 70,
+     "loss": 0.6781201958656311,
+     "reward_accuracy": 0.625,
+     "chosen_shift": -0.10609836876392365,
+     "rejected_shift": -1.499584674835205
+    },
+    {
+     "step": 80,
+     "loss": 0.6186627149581909,
+     "reward_accuracy": 0.9375,
+     "chosen_shift": 0.5142140984535217,
+     "rejected_shift": -1.8419218063354492
+    },
+    {
+     "step": 90,
+     "loss": 0.6648691892623901,
+     "reward_accuracy": 0.625,
+     "chosen_shift": -0.18061216175556183,
+     "rejected_shift": -2.2207465171813965
+    },
+    {
+     "step": 100,
+     "loss": 0.6102617383003235,
+     "reward_accuracy": 0.8125,
+     "chosen_shift": 0.27399539947509766,
+     "rejected_shift": -2.7153797149658203
+    },
+    {
+     "step": 110,
+     "loss": 0.6039714813232422,
+     "reward_accuracy": 0.8125,
+     "chosen_shift": 1.253510594367981,
+     "rejected_shift": -1.7174471616744995
+    },
+    {
+     "step": 120,
+     "loss": 0.544775664806366,
+     "reward_accuracy": 0.875,
+     "chosen_shift": 0.6366345286369324,
+     "rejected_shift": -3.167243480682373
+    },
+    {
+     "step": 130,
+     "loss": 0.5211228132247925,
+     "reward_accuracy": 0.9375,
+     "chosen_shift": 0.6430834531784058,
+     "rejected_shift": -4.32642126083374
+    },
+    {
+     "step": 140,
+     "loss": 0.5379406809806824,
+     "reward_accuracy": 0.875,
+     "chosen_shift": 0.5109931230545044,
+     "rejected_shift": -3.864450216293335
+    },
+    {
+     "step": 149,
+     "loss": 0.5520192980766296,
+     "reward_accuracy": 0.875,
+     "chosen_shift": 1.1403450965881348,
+     "rejected_shift": -2.395825147628784
+    }
+   ]
+  },
+  {
+   "method": "SFT on the corrected cases",
+   "seed": 1,
+   "test": {
+    "exact": 0.8325,
+    "verdict": 0.8325,
+    "well_formed": 1.0,
+    "faithful": 1.0,
+    "true_statement": 0.8325,
+    "verdict_near_limit": 0.785234899328859,
+    "verdict_far_from_limit": 0.8605577689243028,
+    "n": 400,
+    "samples": [
+     {
+      "prompt": "Q: Reading for pump P-98: vibration 13 mm/s (max 5 mm/s). Check it.\nA:",
+      "output": "ALARM P-98 13 mm/s > 5 mm/s",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Pressure on fan F-93: 7 bar vs limit 10 bar.\nA:",
+      "output": "OK F-93 7 bar <= 10 bar",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Current on pump P-04: 51 A vs limit 27 A.\nA:",
+      "output": "ALARM P-04 51 A > 27 A",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Motor M-03 temperature is 36 C, limit 85 C. Status?\nA:",
+      "output": "OK M-03 36 C <= 85 C",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Compressor C-56 temperature is 70 C, limit 79 C. Status?\nA:",
+      "output": "OK C-56 70 C <= 79 C",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Vibration on compressor C-45: 11 mm/s vs limit 10 mm/s.\nA:",
+      "output": "ALARM C-45 11 mm/s > 10 mm/s",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Current on motor M-01: 37 A vs limit 36 A.\nA:",
+      "output": "OK M-01 37 A <= 36 A",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Fan F-28 temperature is 43 C, limit 48 C. Status?\nA:",
+      "output": "OK F-28 43 C <= 48 C",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     }
+    ]
+   },
+   "ood": {
+    "exact": 0.0033333333333333335,
+    "verdict": 0.57,
+    "well_formed": 0.9266666666666666,
+    "faithful": 0.0033333333333333335,
+    "true_statement": 0.5666666666666667,
+    "verdict_near_limit": 0.9081632653061225,
+    "verdict_far_from_limit": 0.40594059405940597,
+    "n": 300,
+    "samples": [
+     {
+      "prompt": "Q: Log: turbine T-29 shows vibration at 5 mm/s, max 6 mm/s. Verdict?\nA:",
+      "output": "ALARM M-29 5 mm/s > 6 mm/s",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Limit 60 C. Turbine T-66 temperature now 61 C. Status?\nA:",
+      "output": "ALARM 18 88 C",
+      "exact": false,
+      "verdict": false,
+      "well_formed": false,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Log: conveyor CV-73 shows vibration at 9 mm/s, max 6 mm/s. Verdict?\nA:",
+      "output": "ALARM C-73 9 mm/s > 6 mm/s",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Log: turbine T-80 shows pressure at 8 bar, max 5 bar. Verdict?\nA:",
+      "output": "ALARM M-80 5 bar > 5 bar",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Limit 6 bar. Conveyor CV-51 pressure now 3 bar. Status?\nA:",
+      "output": "ALARM C-51 3 bar > 9 bar",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Limit 4 mm/s. Conveyor CV-68 vibration now 3 mm/s. Status?\nA:",
+      "output": "ALARM C-68 3 mm/s > 11 mm/s",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Log: conveyor CV-62 shows temperature at 23 C, max 76 C. Verdict?\nA:",
+      "output": "ALARM C-62 23 C > 76 C",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Log: conveyor CV-24 shows temperature at 31 C, max 82 C. Verdict?\nA:",
+      "output": "ALARM C-24 32 C > 82 C",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": false
+     }
+    ]
+   },
+   "bpc": 3.8281776479591367,
+   "trainable_params": 820096,
+   "seconds": 9.29785704612732,
+   "log": [
+    {
+     "step": 0,
+     "loss": 0.041573457419872284
+    },
+    {
+     "step": 50,
+     "loss": 0.012220190837979317
+    },
+    {
+     "step": 100,
+     "loss": 0.015009505674242973
+    },
+    {
+     "step": 149,
+     "loss": 0.007984664291143417
+    }
+   ]
+  },
+  {
+   "method": "DPO",
+   "seed": 2,
+   "test": {
+    "exact": 0.6775,
+    "verdict": 0.69,
+    "well_formed": 0.795,
+    "faithful": 0.7825,
+    "true_statement": 0.68,
+    "verdict_near_limit": 0.5369127516778524,
+    "verdict_far_from_limit": 0.7808764940239044,
+    "n": 400,
+    "samples": [
+     {
+      "prompt": "Q: Reading for pump P-98: vibration 13 mm/s (max 5 mm/s). Check it.\nA:",
+      "output": "ALARM P-98 13 mm/s > 5 mm/s",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Pressure on fan F-93: 7 bar vs limit 10 bar.\nA:",
+      "output": "OK F-93 7 bar <= 10 bar",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Current on pump P-04: 51 A vs limit 27 A.\nA:",
+      "output": "ALARM P-04 51 A > 27 A",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Motor M-03 temperature is 36 C, limit 85 C. Status?\nA:",
+      "output": "OK M-03 36 C <= 85 C",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Compressor C-56 temperature is 70 C, limit 79 C. Status?\nA:",
+      "output": "OK C-56 70 C <= 79 C",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Vibration on compressor C-45: 11 mm/s vs limit 10 mm/s.\nA:",
+      "output": "ALARM C-45 11 mm/s 10 mm/s",
+      "exact": false,
+      "verdict": false,
+      "well_formed": false,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Current on motor M-01: 37 A vs limit 36 A.\nA:",
+      "output": "ALARM M-01 37 A > 36 A",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Fan F-28 temperature is 43 C, limit 48 C. Status?\nA:",
+      "output": "bar53 > 47 C",
+      "exact": false,
+      "verdict": false,
+      "well_formed": false,
+      "faithful": false,
+      "true_statement": false
+     }
+    ]
+   },
+   "ood": {
+    "exact": 0.0,
+    "verdict": 0.4533333333333333,
+    "well_formed": 0.53,
+    "faithful": 0.0,
+    "true_statement": 0.4,
+    "verdict_near_limit": 0.25510204081632654,
+    "verdict_far_from_limit": 0.5495049504950495,
+    "n": 300,
+    "samples": [
+     {
+      "prompt": "Q: Log: turbine T-29 shows vibration at 5 mm/s, max 6 mm/s. Verdict?\nA:",
+      "output": "8 mm/s 7 mm/s",
+      "exact": false,
+      "verdict": false,
+      "well_formed": false,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Limit 60 C. Turbine T-66 temperature now 61 C. Status?\nA:",
+      "output": "OK T-66 61 C <= 88 C",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Log: conveyor CV-73 shows vibration at 9 mm/s, max 6 mm/s. Verdict?\nA:",
+      "output": "C-73 9 mm/s > 6 mm/s",
+      "exact": false,
+      "verdict": false,
+      "well_formed": false,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Log: turbine T-80 shows pressure at 8 bar, max 5 bar. Verdict?\nA:",
+      "output": "ALARM M-80 8 bar > 5 bar",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Limit 6 bar. Conveyor CV-51 pressure now 3 bar. Status?\nA:",
+      "output": "OK C-51 3 bar <= <= 11 bar",
+      "exact": false,
+      "verdict": false,
+      "well_formed": false,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Limit 4 mm/s. Conveyor CV-68 vibration now 3 mm/s. Status?\nA:",
+      "output": "OK C-68 3 mm/s <= 8 mm/s",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Log: conveyor CV-62 shows temperature at 23 C, max 76 C. Verdict?\nA:",
+      "output": "OK C-62 23 C <= 76 C",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Log: conveyor CV-24 shows temperature at 31 C, max 82 C. Verdict?\nA:",
+      "output": "OK C-24 31 C <= 82 C",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     }
+    ]
+   },
+   "bpc": 3.766732374389476,
+   "log": [
+    {
+     "step": 0,
+     "loss": 0.6931471824645996,
+     "reward_accuracy": 0.0,
+     "chosen_shift": 0.0,
+     "rejected_shift": 0.0
+    },
+    {
+     "step": 10,
+     "loss": 0.6685177087783813,
+     "reward_accuracy": 0.875,
+     "chosen_shift": 0.1652960479259491,
+     "rejected_shift": -0.3375852704048157
+    },
+    {
+     "step": 20,
+     "loss": 0.6303640007972717,
+     "reward_accuracy": 0.6875,
+     "chosen_shift": 0.3071286082267761,
+     "rejected_shift": -1.0536731481552124
+    },
+    {
+     "step": 30,
+     "loss": 0.5859965085983276,
+     "reward_accuracy": 0.6875,
+     "chosen_shift": 0.275385320186615,
+     "rejected_shift": -2.33616042137146
+    },
+    {
+     "step": 40,
+     "loss": 0.4985315501689911,
+     "reward_accuracy": 0.9375,
+     "chosen_shift": 0.2672958970069885,
+     "rejected_shift": -4.446905136108398
+    },
+    {
+     "step": 50,
+     "loss": 0.5913984179496765,
+     "reward_accuracy": 0.6875,
+     "chosen_shift": -0.5599604249000549,
+     "rejected_shift": -3.8852412700653076
+    },
+    {
+     "step": 60,
+     "loss": 0.5642260313034058,
+     "reward_accuracy": 0.75,
+     "chosen_shift": -0.15163648128509521,
+     "rejected_shift": -3.62740159034729
+    },
+    {
+     "step": 70,
+     "loss": 0.579828143119812,
+     "reward_accuracy": 0.6875,
+     "chosen_shift": -0.41872844099998474,
+     "rejected_shift": -3.867771863937378
+    },
+    {
+     "step": 80,
+     "loss": 0.5682366490364075,
+     "reward_accuracy": 0.75,
+     "chosen_shift": -0.5866138935089111,
+     "rejected_shift": -3.9085817337036133
+    },
+    {
+     "step": 90,
+     "loss": 0.4426059424877167,
+     "reward_accuracy": 0.9375,
+     "chosen_shift": 0.03251536190509796,
+     "rejected_shift": -6.277209758758545
+    },
+    {
+     "step": 100,
+     "loss": 0.40724414587020874,
+     "reward_accuracy": 0.9375,
+     "chosen_shift": -0.8638937473297119,
+     "rejected_shift": -8.54737663269043
+    },
+    {
+     "step": 110,
+     "loss": 0.5375772714614868,
+     "reward_accuracy": 0.75,
+     "chosen_shift": -1.2491785287857056,
+     "rejected_shift": -5.812873840332031
+    },
+    {
+     "step": 120,
+     "loss": 0.46701493859291077,
+     "reward_accuracy": 0.9375,
+     "chosen_shift": -0.05634398013353348,
+     "rejected_shift": -5.748978137969971
+    },
+    {
+     "step": 130,
+     "loss": 0.5458704829216003,
+     "reward_accuracy": 0.6875,
+     "chosen_shift": -1.8498029708862305,
+     "rejected_shift": -5.8006181716918945
+    },
+    {
+     "step": 140,
+     "loss": 0.5324978828430176,
+     "reward_accuracy": 0.75,
+     "chosen_shift": -1.5506362915039062,
+     "rejected_shift": -6.885719299316406
+    },
+    {
+     "step": 149,
+     "loss": 0.42224404215812683,
+     "reward_accuracy": 0.875,
+     "chosen_shift": -0.8058244585990906,
+     "rejected_shift": -8.272688865661621
+    }
+   ]
+  },
+  {
+   "method": "DPO + NLL",
+   "seed": 2,
+   "test": {
+    "exact": 0.8225,
+    "verdict": 0.8325,
+    "well_formed": 0.9525,
+    "faithful": 0.9425,
+    "true_statement": 0.825,
+    "verdict_near_limit": 0.7651006711409396,
+    "verdict_far_from_limit": 0.8725099601593626,
+    "n": 400,
+    "samples": [
+     {
+      "prompt": "Q: Reading for pump P-98: vibration 13 mm/s (max 5 mm/s). Check it.\nA:",
+      "output": "ALARM P-98 13 mm/s > 5 mm/s",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Pressure on fan F-93: 7 bar vs limit 10 bar.\nA:",
+      "output": "OK F-93 7 bar <= 10 bar",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Current on pump P-04: 51 A vs limit 27 A.\nA:",
+      "output": "ALARM P-04 51 A > 27 A",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Motor M-03 temperature is 36 C, limit 85 C. Status?\nA:",
+      "output": "OK M-03 36 C <= 85 C",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Compressor C-56 temperature is 70 C, limit 79 C. Status?\nA:",
+      "output": "OK C-56 70 C <= 79 C",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Vibration on compressor C-45: 11 mm/s vs limit 10 mm/s.\nA:",
+      "output": "ALARM C-45 11 mm/s > 10 mm/s",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Current on motor M-01: 37 A vs limit 36 A.\nA:",
+      "output": "ALARM M-01 37 A > 36 A",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Fan F-28 temperature is 43 C, limit 48 C. Status?\nA:",
+      "output": "bar53 > 47 C",
+      "exact": false,
+      "verdict": false,
+      "well_formed": false,
+      "faithful": false,
+      "true_statement": false
+     }
+    ]
+   },
+   "ood": {
+    "exact": 0.0,
+    "verdict": 0.5866666666666667,
+    "well_formed": 0.6766666666666666,
+    "faithful": 0.0,
+    "true_statement": 0.5166666666666667,
+    "verdict_near_limit": 0.45918367346938777,
+    "verdict_far_from_limit": 0.6485148514851485,
+    "n": 300,
+    "samples": [
+     {
+      "prompt": "Q: Log: turbine T-29 shows vibration at 5 mm/s, max 6 mm/s. Verdict?\nA:",
+      "output": "C-29 5 mm/s > 6 mm/s",
+      "exact": false,
+      "verdict": false,
+      "well_formed": false,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Limit 60 C. Turbine T-66 temperature now 61 C. Status?\nA:",
+      "output": "OK 10 C-66 <= 61 C",
+      "exact": false,
+      "verdict": false,
+      "well_formed": false,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Log: conveyor CV-73 shows vibration at 9 mm/s, max 6 mm/s. Verdict?\nA:",
+      "output": "C-73 8 mm/s > 6 mm/s",
+      "exact": false,
+      "verdict": false,
+      "well_formed": false,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Log: turbine T-80 shows pressure at 8 bar, max 5 bar. Verdict?\nA:",
+      "output": "ALARM M-80 8 bar > 5 bar",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Limit 6 bar. Conveyor CV-51 pressure now 3 bar. Status?\nA:",
+      "output": "OK C-51 3 bar <= 9 bar",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Limit 4 mm/s. Conveyor CV-68 vibration now 3 mm/s. Status?\nA:",
+      "output": "OK C-68 3 mm/s <= 8 mm/s",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Log: conveyor CV-62 shows temperature at 23 C, max 76 C. Verdict?\nA:",
+      "output": "OK C-62 23 C <= 76 C",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Log: conveyor CV-24 shows temperature at 31 C, max 82 C. Verdict?\nA:",
+      "output": "OK C-24 31 C <= 82 C",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     }
+    ]
+   },
+   "bpc": 3.7631867800592884,
+   "log": [
+    {
+     "step": 0,
+     "loss": 0.7355661392211914,
+     "reward_accuracy": 0.0,
+     "chosen_shift": 0.0,
+     "rejected_shift": 0.0
+    },
+    {
+     "step": 10,
+     "loss": 0.7158471345901489,
+     "reward_accuracy": 0.875,
+     "chosen_shift": 0.2164526730775833,
+     "rejected_shift": -0.3248422145843506
+    },
+    {
+     "step": 20,
+     "loss": 0.6482111215591431,
+     "reward_accuracy": 0.5625,
+     "chosen_shift": 0.33771589398384094,
+     "rejected_shift": -0.8491966724395752
+    },
+    {
+     "step": 30,
+     "loss": 0.6189615726470947,
+     "reward_accuracy": 0.625,
+     "chosen_shift": 0.3246179223060608,
+     "rejected_shift": -1.978163242340088
+    },
+    {
+     "step": 40,
+     "loss": 0.526093602180481,
+     "reward_accuracy": 0.875,
+     "chosen_shift": 0.3330766260623932,
+     "rejected_shift": -4.077159881591797
+    },
+    {
+     "step": 50,
+     "loss": 0.6498314142227173,
+     "reward_accuracy": 0.6875,
+     "chosen_shift": -0.11707830429077148,
+     "rejected_shift": -3.512878656387329
+    },
+    {
+     "step": 60,
+     "loss": 0.5894426703453064,
+     "reward_accuracy": 0.75,
+     "chosen_shift": 0.39686235785484314,
+     "rejected_shift": -3.1218512058258057
+    },
+    {
+     "step": 70,
+     "loss": 0.6116118431091309,
+     "reward_accuracy": 0.6875,
+     "chosen_shift": 0.188131183385849,
+     "rejected_shift": -3.1272177696228027
+    },
+    {
+     "step": 80,
+     "loss": 0.6260185241699219,
+     "reward_accuracy": 0.75,
+     "chosen_shift": -0.23535409569740295,
+     "rejected_shift": -2.8951942920684814
+    },
+    {
+     "step": 90,
+     "loss": 0.4686075747013092,
+     "reward_accuracy": 1.0,
+     "chosen_shift": 0.5038780570030212,
+     "rejected_shift": -5.424647331237793
+    },
+    {
+     "step": 100,
+     "loss": 0.45701566338539124,
+     "reward_accuracy": 0.875,
+     "chosen_shift": 0.4529566764831543,
+     "rejected_shift": -6.4592390060424805
+    },
+    {
+     "step": 110,
+     "loss": 0.5871478319168091,
+     "reward_accuracy": 0.75,
+     "chosen_shift": -0.2688628137111664,
+     "rejected_shift": -4.460226535797119
+    },
+    {
+     "step": 120,
+     "loss": 0.4959432780742645,
+     "reward_accuracy": 0.875,
+     "chosen_shift": 0.44842711091041565,
+     "rejected_shift": -4.855102062225342
+    },
+    {
+     "step": 130,
+     "loss": 0.5652020573616028,
+     "reward_accuracy": 0.875,
+     "chosen_shift": 0.20504465699195862,
+     "rejected_shift": -4.282472610473633
+    },
+    {
+     "step": 140,
+     "loss": 0.5844352841377258,
+     "reward_accuracy": 0.8125,
+     "chosen_shift": -0.34453463554382324,
+     "rejected_shift": -5.780160427093506
+    },
+    {
+     "step": 149,
+     "loss": 0.44341379404067993,
+     "reward_accuracy": 0.9375,
+     "chosen_shift": 0.67160564661026,
+     "rejected_shift": -6.079522132873535
+    }
+   ]
+  },
+  {
+   "method": "SFT on the corrected cases",
+   "seed": 2,
+   "test": {
+    "exact": 0.8875,
+    "verdict": 0.8875,
+    "well_formed": 1.0,
+    "faithful": 1.0,
+    "true_statement": 0.8875,
+    "verdict_near_limit": 0.8322147651006712,
+    "verdict_far_from_limit": 0.9203187250996016,
+    "n": 400,
+    "samples": [
+     {
+      "prompt": "Q: Reading for pump P-98: vibration 13 mm/s (max 5 mm/s). Check it.\nA:",
+      "output": "ALARM P-98 13 mm/s > 5 mm/s",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Pressure on fan F-93: 7 bar vs limit 10 bar.\nA:",
+      "output": "OK F-93 7 bar <= 10 bar",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Current on pump P-04: 51 A vs limit 27 A.\nA:",
+      "output": "ALARM P-04 51 A > 27 A",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Motor M-03 temperature is 36 C, limit 85 C. Status?\nA:",
+      "output": "OK M-03 36 C <= 85 C",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Compressor C-56 temperature is 70 C, limit 79 C. Status?\nA:",
+      "output": "OK C-56 70 C <= 79 C",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Vibration on compressor C-45: 11 mm/s vs limit 10 mm/s.\nA:",
+      "output": "ALARM C-45 11 mm/s > 10 mm/s",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Current on motor M-01: 37 A vs limit 36 A.\nA:",
+      "output": "ALARM M-01 37 A > 36 A",
+      "exact": true,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Fan F-28 temperature is 43 C, limit 48 C. Status?\nA:",
+      "output": "ALARM F-28 43 C > 48 C",
+      "exact": false,
+      "verdict": false,
+      "well_formed": true,
+      "faithful": true,
+      "true_statement": false
+     }
+    ]
+   },
+   "ood": {
+    "exact": 0.0,
+    "verdict": 0.6633333333333333,
+    "well_formed": 0.8233333333333334,
+    "faithful": 0.0,
+    "true_statement": 0.61,
+    "verdict_near_limit": 0.5918367346938775,
+    "verdict_far_from_limit": 0.698019801980198,
+    "n": 300,
+    "samples": [
+     {
+      "prompt": "Q: Log: turbine T-29 shows vibration at 5 mm/s, max 6 mm/s. Verdict?\nA:",
+      "output": "OK M-29 5mm/s <= 6 mm/s",
+      "exact": false,
+      "verdict": false,
+      "well_formed": false,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Limit 60 C. Turbine T-66 temperature now 61 C. Status?\nA:",
+      "output": "OK 12 C-6 6 C <= 81 C",
+      "exact": false,
+      "verdict": false,
+      "well_formed": false,
+      "faithful": false,
+      "true_statement": false
+     },
+     {
+      "prompt": "Q: Log: conveyor CV-73 shows vibration at 9 mm/s, max 6 mm/s. Verdict?\nA:",
+      "output": "ALARM C-73 9 mm/s > 6 mm/s",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Log: turbine T-80 shows pressure at 8 bar, max 5 bar. Verdict?\nA:",
+      "output": "ALARM M-80 8 bar > 5 bar",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Limit 6 bar. Conveyor CV-51 pressure now 3 bar. Status?\nA:",
+      "output": "OK C-51 3 bar <= 11 bar",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Limit 4 mm/s. Conveyor CV-68 vibration now 3 mm/s. Status?\nA:",
+      "output": "OK C-68 3 mm/s <= 8 mm/s",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Log: conveyor CV-62 shows temperature at 23 C, max 76 C. Verdict?\nA:",
+      "output": "OK C-62 23 C <= 76 C",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     },
+     {
+      "prompt": "Q: Log: conveyor CV-24 shows temperature at 31 C, max 82 C. Verdict?\nA:",
+      "output": "OK C-24 31 C <= 82 C",
+      "exact": false,
+      "verdict": true,
+      "well_formed": true,
+      "faithful": false,
+      "true_statement": true
+     }
+    ]
+   },
+   "bpc": 3.7437011457165323,
+   "trainable_params": 820096,
+   "seconds": 9.712226867675781,
+   "log": [
+    {
+     "step": 0,
+     "loss": 0.04525068774819374
+    },
+    {
+     "step": 50,
+     "loss": 0.012831778265535831
+    },
+    {
+     "step": 100,
+     "loss": 0.004287940915673971
+    },
+    {
+     "step": 149,
+     "loss": 0.003062685253098607
+    }
+   ]
+  }
+ ],
+ "dpo_high_lr": {
+  "test": {
+   "exact": 0.2,
+   "verdict": 0.2975,
+   "well_formed": 0.28,
+   "faithful": 0.255,
+   "true_statement": 0.2475,
+   "verdict_near_limit": 0.3087248322147651,
+   "verdict_far_from_limit": 0.2908366533864542,
+   "n": 400,
+   "samples": [
+    {
+     "prompt": "Q: Reading for pump P-98: vibration 13 mm/s (max 5 mm/s). Check it.\nA:",
+     "output": "ALARM P-98 13 mm/s > 5 mm/s",
+     "exact": true,
+     "verdict": true,
+     "well_formed": true,
+     "faithful": true,
+     "true_statement": true
+    },
+    {
+     "prompt": "Q: Pressure on fan F-93: 7 bar vs limit 10 bar.\nA:",
+     "output": "ALARM F-93 7 C > 10 bar > 10 bar",
+     "exact": false,
+     "verdict": false,
+     "well_formed": false,
+     "faithful": false,
+     "true_statement": false
+    },
+    {
+     "prompt": "Q: Current on pump P-04: 51 A vs limit 27 A.\nA:",
+     "output": "ea ALARM P-04 51 A > 27 A > 27 A",
+     "exact": false,
+     "verdict": false,
+     "well_formed": false,
+     "faithful": false,
+     "true_statement": false
+    },
+    {
+     "prompt": "Q: Motor M-03 temperature is 36 C, limit 85 C. Status?\nA:",
+     "output": "OK M-03 36 A > 85 C > 85 C",
+     "exact": false,
+     "verdict": false,
+     "well_formed": false,
+     "faithful": false,
+     "true_statement": false
+    },
+    {
+     "prompt": "Q: Compressor C-56 temperature is 70 C, limit 79 C. Status?\nA:",
+     "output": "C-56 70 C > 79 C > 79 C",
+     "exact": false,
+     "verdict": false,
+     "well_formed": false,
+     "faithful": false,
+     "true_statement": false
+    },
+    {
+     "prompt": "Q: Vibration on compressor C-45: 11 mm/s vs limit 10 mm/s.\nA:",
+     "output": "ALARM C-45 11 11 mm/s > 10 mm/s",
+     "exact": false,
+     "verdict": false,
+     "well_formed": false,
+     "faithful": false,
+     "true_statement": false
+    },
+    {
+     "prompt": "Q: Current on motor M-01: 37 A vs limit 36 A.\nA:",
+     "output": "OK M-01 37 35 A <= 26 A",
+     "exact": false,
+     "verdict": false,
+     "well_formed": false,
+     "faithful": false,
+     "true_statement": false
+    },
+    {
+     "prompt": "Q: Fan F-28 temperature is 43 C, limit 48 C. Status?\nA:",
+     "output": "OlLARM F-28 33 A > 38 C > 48 C",
+     "exact": false,
+     "verdict": false,
+     "well_formed": false,
+     "faithful": false,
+     "true_statement": false
+    }
+   ]
+  },
+  "ood": {
+   "exact": 0.0,
+   "verdict": 0.23333333333333334,
+   "well_formed": 0.25,
+   "faithful": 0.0,
+   "true_statement": 0.2,
+   "verdict_near_limit": 0.24489795918367346,
+   "verdict_far_from_limit": 0.22772277227722773,
+   "n": 300,
+   "samples": [
+    {
+     "prompt": "Q: Log: turbine T-29 shows vibration at 5 mm/s, max 6 mm/s. Verdict?\nA:",
+     "output": ", so 16 mm/s arm/s",
+     "exact": false,
+     "verdict": false,
+     "well_formed": false,
+     "faithful": false,
+     "true_statement": false
+    },
+    {
+     "prompt": "Q: Limit 60 C. Turbine T-66 temperature now 61 C. Status?\nA:",
+     "output": "ALARM M-66 61 61 C > 12 C",
+     "exact": false,
+     "verdict": false,
+     "well_formed": false,
+     "faithful": false,
+     "true_statement": false
+    },
+    {
+     "prompt": "Q: Log: conveyor CV-73 shows vibration at 9 mm/s, max 6 mm/s. Verdict?\nA:",
+     "output": "5 7 mm/sr > 6 mm/s",
+     "exact": false,
+     "verdict": false,
+     "well_formed": false,
+     "faithful": false,
+     "true_statement": false
+    },
+    {
+     "prompt": "Q: Log: turbine T-80 shows pressure at 8 bar, max 5 bar. Verdict?\nA:",
+     "output": "18 tmm/s 11 mm/s",
+     "exact": false,
+     "verdict": false,
+     "well_formed": false,
+     "faithful": false,
+     "true_statement": false
+    },
+    {
+     "prompt": "Q: Limit 6 bar. Conveyor CV-51 pressure now 3 bar. Status?\nA:",
+     "output": "OK C-51 3 A > 1 bar",
+     "exact": false,
+     "verdict": true,
+     "well_formed": false,
+     "faithful": false,
+     "true_statement": false
+    },
+    {
+     "prompt": "Q: Limit 4 mm/s. Conveyor CV-68 vibration now 3 mm/s. Status?\nA:",
+     "output": "mmm/sm/s 88 mm/s > 88 mm/s",
+     "exact": false,
+     "verdict": false,
+     "well_formed": false,
+     "faithful": false,
+     "true_statement": false
+    },
+    {
+     "prompt": "Q: Log: conveyor CV-62 shows temperature at 23 C, max 76 C. Verdict?\nA:",
+     "output": "lALAR C-62 23 23 C > 76 C",
+     "exact": false,
+     "verdict": false,
+     "well_formed": false,
+     "faithful": false,
+     "true_statement": false
+    },
+    {
+     "prompt": "Q: Log: conveyor CV-24 shows temperature at 31 C, max 82 C. Verdict?\nA:",
+     "output": "log 222 C <= 22 C",
+     "exact": false,
+     "verdict": false,
+     "well_formed": false,
+     "faithful": false,
+     "true_statement": false
+    }
+   ]
+  },
+  "bpc": 4.136585192653567,
+  "log": [
+   {
+    "step": 0,
+    "loss": 0.6931471824645996,
+    "reward_accuracy": 0.0,
+    "chosen_shift": 0.0,
+    "rejected_shift": 0.0
+   },
+   {
+    "step": 10,
+    "loss": 0.6671311259269714,
+    "reward_accuracy": 0.625,
+    "chosen_shift": -1.1149927377700806,
+    "rejected_shift": -2.377845287322998
+   },
+   {
+    "step": 20,
+    "loss": 0.5974410176277161,
+    "reward_accuracy": 0.75,
+    "chosen_shift": -5.854937553405762,
+    "rejected_shift": -8.30663776397705
+   },
+   {
+    "step": 30,
+    "loss": 0.5567179918289185,
+    "reward_accuracy": 0.75,
+    "chosen_shift": -4.979037284851074,
+    "rejected_shift": -8.937602043151855
+   },
+   {
+    "step": 40,
+    "loss": 0.5136005878448486,
+    "reward_accuracy": 0.8125,
+    "chosen_shift": -4.661876678466797,
+    "rejected_shift": -9.847801208496094
+   },
+   {
+    "step": 50,
+    "loss": 0.466364324092865,
+    "reward_accuracy": 0.8125,
+    "chosen_shift": -3.7120168209075928,
+    "rejected_shift": -11.664283752441406
+   },
+   {
+    "step": 60,
+    "loss": 0.3248985707759857,
+    "reward_accuracy": 0.9375,
+    "chosen_shift": -8.09931468963623,
+    "rejected_shift": -19.353315353393555
+   },
+   {
+    "step": 70,
+    "loss": 0.4806104600429535,
+    "reward_accuracy": 0.8125,
+    "chosen_shift": -7.674249649047852,
+    "rejected_shift": -17.060152053833008
+   },
+   {
+    "step": 80,
+    "loss": 0.3640591502189636,
+    "reward_accuracy": 0.875,
+    "chosen_shift": -6.6319451332092285,
+    "rejected_shift": -18.44498062133789
+   },
+   {
+    "step": 90,
+    "loss": 0.39449283480644226,
+    "reward_accuracy": 0.875,
+    "chosen_shift": -4.65451192855835,
+    "rejected_shift": -14.652742385864258
+   },
+   {
+    "step": 100,
+    "loss": 0.19951526820659637,
+    "reward_accuracy": 1.0,
+    "chosen_shift": -3.496217727661133,
+    "rejected_shift": -19.417043685913086
+   },
+   {
+    "step": 110,
+    "loss": 0.42115291953086853,
+    "reward_accuracy": 0.8125,
+    "chosen_shift": -5.378134727478027,
+    "rejected_shift": -15.573163986206055
+   },
+   {
+    "step": 120,
+    "loss": 0.29007261991500854,
+    "reward_accuracy": 0.875,
+    "chosen_shift": -7.8581953048706055,
+    "rejected_shift": -21.38829231262207
+   },
+   {
+    "step": 130,
+    "loss": 0.25405797362327576,
+    "reward_accuracy": 0.9375,
+    "chosen_shift": -5.68035888671875,
+    "rejected_shift": -23.066295623779297
+   },
+   {
+    "step": 140,
+    "loss": 0.2609941363334656,
+    "reward_accuracy": 0.9375,
+    "chosen_shift": -4.747620582580566,
+    "rejected_shift": -21.00611114501953
+   },
+   {
+    "step": 149,
+    "loss": 0.18163123726844788,
+    "reward_accuracy": 0.9375,
+    "chosen_shift": -3.3981032371520996,
+    "rejected_shift": -22.799114227294922
+   }
+  ]
+ }
+}

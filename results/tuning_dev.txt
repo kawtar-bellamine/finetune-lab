@@ -1,0 +1,8 @@
+dpo 0.1 0.0001 0.0 {'exact': 0.253, 'verdict_near_limit': 0.384, 'verdict_far_from_limit': 0.294, 'faithful': 0.3}
+dpo 0.1 3e-05 1.0 {'exact': 0.753, 'verdict_near_limit': 0.737, 'verdict_far_from_limit': 0.761, 'faithful': 0.933}
+dpo 0.1 1e-05 0.0 {'exact': 0.72, 'verdict_near_limit': 0.727, 'verdict_far_from_limit': 0.716, 'faithful': 0.893}
+dpo 0.1 1e-05 1.0 {'exact': 0.8, 'verdict_near_limit': 0.778, 'verdict_far_from_limit': 0.811, 'faithful': 0.973}
+dpo 0.5 1e-05 1.0 {'exact': 0.81, 'verdict_near_limit': 0.697, 'verdict_far_from_limit': 0.866, 'faithful': 0.98}
+dpo 0.1 5e-06 1.0 {'exact': 0.787, 'verdict_near_limit': 0.758, 'verdict_far_from_limit': 0.801, 'faithful': 0.987}
+sft None 0.0001 None {'exact': 0.773, 'verdict_near_limit': 0.707, 'verdict_far_from_limit': 0.806, 'faithful': 0.997}
+sft None 3e-05 None {'exact': 0.797, 'verdict_near_limit': 0.788, 'verdict_far_from_limit': 0.801, 'faithful': 1.0}
